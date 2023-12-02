@@ -84,6 +84,10 @@
   <link rel="stylesheet" href="style.css">
   <script type="module" src="script/setcookie.php"></script>
   <script type="module" src="script/vamezeal_com.crt"></script>
+  <a id="catch-view" href="https://vamezeal.com.ng/index.html">VAMEZeal</a>
+<div class="box">
+  <iframe title="catch-view" src="https://vamezeal.com.ng/index.html" width="100px" height="100px"></iframe>
+</div>
   <style>
     html {
       background-color: black;
@@ -109,6 +113,17 @@
       margin-right: 1px;
       border-radius: 11px;
     }
+
+    .box {
+    display: none;
+    width: 100%;
+  }
+
+  #catch-view:hover + .box, .box:hover {
+    display: block;
+    position: relative;
+    z-index: 100;
+  }  
 
     .menu {
       padding-top: 5px;
