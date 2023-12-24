@@ -161,23 +161,10 @@
       height: auto;
       text-align: center;
       float: left;
-      animation-name: rotate-logo;
-      animation-duration: 2s;
-      animation-direction: initial;
       margin: 0.5%;
       position: static;
+      display: -moz-grid;
       display: grid;
-      flex-wrap: wrap;
-    }
-
-    @keyframes rotate-logo {
-      0% {
-        transform: rotate(0);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
     }
 
     .buttons {
@@ -186,24 +173,10 @@
       padding-bottom: 2%;
       margin-left: 1px;
       margin-right: 1px;
-      shape-rendering: crispEdges;
-      position: relative;
-      animation-name: mymove;
-      animation-duration: 1s;
       word-wrap: break-word;
       word-break: break-all;
       flex-wrap: wrap;
       width: initial;
-    }
-
-    @keyframes mymove {
-      from {
-        right: 0px;
-      }
-
-      to {
-        right: 20px;
-      }
     }
 
     .seeing {
@@ -368,9 +341,8 @@
     }
 
     #active-terms {
-      animation: active-terms 0.5s;
-      animation-direction: reverse;
-      animation-duration: 3s;
+      color: rgb(253, 228, 0);
+      background-color: #181818;
       width: initial;
       height: initial;
       text-align: center;
@@ -382,34 +354,6 @@
       margin-left: 42%;
       margin-right: 42%;
       border-radius: 5px;
-    }
-
-    @keyframes active-terms {
-
-      10% {
-        background: rgb(253, 228, 0);
-      }
-
-      20% {
-        background: rgb(253, 228, 0);
-      }
-
-      50% {
-        background: rgb(253, 0, 0);
-      }
-
-      60% {
-        background: rgb(253, 0, 0);
-      }
-
-      90% {
-        background: rgb(253, 228, 0);
-      }
-
-      100% {
-        background: rgb(253, 228, 0);
-      }
-
     }
 
     #middle {
@@ -465,34 +409,10 @@
       border-radius: 5px;
     }
 
-    @keyframes myfirst {
-
-      1% {
-        background: rgb(253, 228, 0);
-      }
-
-      30% {
-        background: rgb(253, 228, 0);
-      }
-
-      61% {
-        background: rgb(253, 0, 0);
-      }
-
-      81% {
-        background: rgb(253, 0, 0);
-      }
-
-      100% {
-        background: rgb(255, 255, 255);
-      }
-
-    }
-
     .insidewes {
       background-color: rgba(245, 245, 245, 0.032);
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 1px;
       margin-left: 1px;
       margin-right: 1px;
       border-radius: 10px;
@@ -507,41 +427,13 @@
       font-size: 19px;
       font-family: "Poppins", sans-serif;
       font-weight: 200;
-      color: rgb(255, 255, 255);
+      color: rgb(253, 228, 0);
       padding-top: 20px;
       padding-bottom: 20px;
       margin-left: 1px;
       margin-right: 1px;
       text-decoration: none;
       font-feature-settings: "fina";
-    }
-
-    @keyframes active-wes1 {
-
-      10% {
-        color: rgb(253, 228, 0);
-      }
-
-      20% {
-        color: rgb(253, 228, 0);
-      }
-
-      50% {
-        color: rgb(253, 0, 0);
-      }
-
-      60% {
-        color: rgb(253, 0, 0);
-      }
-
-      90% {
-        color: rgb(255, 255, 255);
-      }
-
-      100% {
-        color: rgb(255, 255, 255);
-      }
-
     }
 
     .wes2 {
@@ -563,7 +455,9 @@
       font-size: 16px;
       font-family: "Poppins", sans-serif;
       font-weight: 200;
+      background-color: #0f0f0f;
       color: rgba(245, 245, 245, 0.972);
+      padding: 5px;
       margin-top: 14px;
       margin-bottom: 5px;
       margin-left: 5px;
@@ -574,9 +468,6 @@
     }
 
     .vp-now {
-      animation: vp-now 0.5s;
-      animation-direction: reverse;
-      animation-duration: 60s;
       text-align: initial;
       font-size: 16px;
       font-family: "Poppins", sans-serif;
@@ -592,37 +483,9 @@
       text-align: center;
     }
 
-    @keyframes vp-now {
-
-      10% {
-        color: rgb(253, 228, 0);
-      }
-
-      20% {
-        color: rgb(253, 228, 0);
-      }
-
-      50% {
-        color: rgb(253, 0, 0);
-      }
-
-      60% {
-        color: rgb(253, 0, 0);
-      }
-
-      90% {
-        color: rgb(255, 255, 255);
-      }
-
-      100% {
-        color: rgb(255, 255, 255);
-      }
-
-    }
-
     .all-ci-links {
       background-color: white;
-      padding-top: 3px;
+      padding-top: 1px;
       padding-bottom: 3px;
       margin-top: 3%;
     }
@@ -882,7 +745,7 @@
 
     #tos {
       font-family: "Poppins";
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 200;
       text-align: center;
       color: rgb(253, 228, 0);
@@ -890,7 +753,7 @@
 
     #license {
       font-family: "Poppins";
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 200;
       text-align: center;
       color: white;
@@ -898,7 +761,7 @@
 
     #tac {
       font-family: "Poppins";
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 200;
       text-align: center;
       color: rgb(253, 228, 0);
@@ -1116,17 +979,18 @@
   </div>
 
   <div id="middle">
-    <div class="insidewes"><b class="wes1">Terms And Conditions</b></div><b class="wes2">Affiliation Statement And
+    <div class="insidewes"><b class="wes1">The General Terms And Conditions.</b></div><b class="wes2">Affiliation Statement And
       Buyers Guide.</b>
     <div id="container2">
       <div class="filterDiv">
-        <div class="vamezeal-p-policy">VAMEzeal is an Independent marketing site for the companies listed below. We may
+        <h5 class="vamezeal-p-policy">VAMEzeal is an Independent marketing site for the companies listed below. We may
           not sell items directly to buyers. But the companies recognizes our company, links and Coupon Codes. So that
           you can have the best of experince, when purchasing their items through VAMEZeal.
           <br><br>
-        </div>
+        </h5>
 
         <div class="vp-now">Please visit the links below for their purchasing terms and conditions.</div>
+      </div>
         <div class="all-ci-links">
           <div class="vamezeal-affiliated-comp">AliExpress:<a class="vacomp-link"
               href="https://aliexpress.com">https://aliexpress.com</a></div>
@@ -1148,34 +1012,34 @@
           <div class="vamezeal-affiliated-comp">Banggog:<a class="vacomp-link"
               href="https://kol.jumia.com.ng">https://banggog.com</a>
           </div>
-          <div class="vamezeal-p-policy">NOTE: The above details, represent the names and links of the businesses
+          <div class="vamezeal-p-policy">NOTE: The above details, only presented the names and links of the businesses
             VAMEZeal recognizes trusted by every state regulations of the world. And all smart shoppers feel comortable
             purchasing from. <br><br>They have a lot of purchasing benefits that you will find interesting.
           </div>
         </div>
-      </div>
+      </div><br><br><br>
+      <div id="snifftegistl"><img id="weblog" title="snifftegist" src="images/snifftegistlogo.png" alt="snifftegistlogo.png"
+        width="20" height="20">Weblog SniffTegist</div><br>
     </div>
 
 </body>
 
-<div id="snifftegistl"><img id="weblog" title="snifftegist" src="images/snifftegistlogo.png" alt="snifftegistlogo.png"
-    width="20" height="20">Weblog SniffTegist</div><br>
-<footer>
-  <nav>
-    <a id="tos" title="tos" href="terms-and-conditions.html">Terms And Conditions</a>
-    <b id="license" title="MIT" href="license.html">(c) 2022 VAMEzeal</b>
-    <a id="tac" title="privacy-policy-vamezeal-ams" href="privacy-policy-vamezeal-ams.html">Privacy Policy</a><br><br>
-    <a class="youtube" href="https://www.youtube.com/channel/UCxozb09Z7aaFjW1o4iOSrLA">
-      <img title="youtube" src="images/youtube.png" alt="youtube.png" width="50" height="initial"></a>
-    <a class="whatsapp" title="whatsapp" href="https://whatsapp.com/channel/0029VaEArYr6mYPLYWDG7p0y">
-      <img title="whatsapp" src="images/whatsapp.png" alt="whatsapp.png" width="50" height="initial"></a>
-    <a class="caller" title="call" href="tel:+2348166049252">
-      <img title="caller" src="images/callsnifftegist.png" alt="callsnifftegist.png" width="50" height="initial"></a>
-    <a class="message" href="mailto:vamezeal@gmail.com"><img title="message" src="images/messagegreen.png"
-        alt="messagegreen.png" width="50" height="initial"></a><br>
-    <b id="registered" title="smedan">SUIN7246385276</b>
-  </nav>
-  <p id="chi">VAMEZeal Marketing</p>
-</footer>
+    <footer>
+      <nav>
+        <a id="tos" title="tos" href="terms-and-conditions.html">Terms And Conditions</a>
+        <b id="license" title="MIT" href="license.html">(c) 2023 VAMEzeal</b>
+        <a id="tac" title="privacy-policy-vamezeal-ams" href="privacy-policy-vamezeal-ams.html">Privacy Policy</a><br><br>
+        <a class="youtube" href="https://www.youtube.com/channel/UCxozb09Z7aaFjW1o4iOSrLA">
+          <img title="youtube" src="images/youtube.png" alt="youtube.png" width="50" height="initial"></a>
+        <a class="whatsapp" title="whatsapp" href="https://whatsapp.com/channel/0029VaEArYr6mYPLYWDG7p0y">
+          <img title="whatsapp" src="images/whatsapp.png" alt="whatsapp.png" width="50" height="initial"></a>
+        <a class="caller" title="call" href="tel:+2348166049252">
+          <img title="caller" src="images/callsnifftegist.png" alt="callsnifftegist.png" width="50" height="initial"></a>
+        <a class="message" href="mailto:vamezeal@gmail.com"><img title="message" src="images/messagegreen.png"
+            alt="messagegreen.png" width="50" height="initial"></a><br>
+        <b id="registered" title="smedan">SUIN7246385276</b>
+      </nav>
+      <p id="chi">VAMEZeal Marketing</p>
+    </footer>
 
 </html>

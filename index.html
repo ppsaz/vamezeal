@@ -210,23 +210,10 @@
       height: auto;
       text-align: center;
       float: left;
-      animation-name: rotate-logo;
-      animation-duration: 2s;
-      animation-direction: initial;
       margin: 0.5%;
       position: static;
       display: -moz-grid;
       display: grid;
-    }
-
-    @keyframes rotate-logo {
-      0% {
-        transform: rotate(0);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
     }
 
     .buttons {
@@ -235,24 +222,10 @@
       padding-bottom: 2%;
       margin-left: 1px;
       margin-right: 1px;
-      shape-rendering: crispEdges;
-      position: relative;
-      animation-name: mymove;
-      animation-duration: 1s;
       word-wrap: break-word;
       word-break: break-all;
       flex-wrap: wrap;
       width: initial;
-    }
-
-    @keyframes mymove {
-      from {
-        right: 0px;
-      }
-
-      to {
-        right: 20px;
-      }
     }
 
     .seeing {
@@ -394,7 +367,7 @@
       height: initial;
       text-align: center;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
+      font-weight: 400;
       font-size: 14px;
       /* Increase font-size */
       padding-top: 1px;
@@ -485,7 +458,6 @@
       background-size: cover;
       background-position: center;
       background-position: center;
-      flood-color: rgb(80, 253, 0);
       background-color: #0a0a0a;
       color: rgb(80, 253, 0);
       padding-left: 5px;
@@ -506,23 +478,11 @@
       border-right-color: whitesmoke;
     }
 
-    @keyframes btn-catg-top {
-
-      20% {
-        color: rgb(253, 253, 253);
-      }
-
-      80% {
-        background-image: url(images/activbtn-transparentV1.webp);
-      }
-
-    }
 
     .atton {
-      animation: stepBstep 0.9s infinite ease-out;
-      animation-direction: alternate-reverse;
-      background-repeat: no-repeat;
+      background-image: url("images/svamels5.webp");
       background-position: center;
+      background-repeat: no-repeat;
       background-size: contain;
       background-color: rgba(255, 255, 255, 0.033);
       padding-top: 1px;
@@ -537,51 +497,11 @@
       border-bottom-right-radius: 1px;
     }
 
-    @keyframes stepBstep {
-
-      100% {
-        background-image: url(images/stepbysteplr1a.webp);
-      }
-
-      90% {
-        background-image: url(images/stepbysteplr1b.webp);
-      }
-
-      80% {
-        background-image: url(images/stepbysteplr1c.webp);
-      }
-
-      70% {
-        background-image: url(images/stepbysteplr1d.webp);
-      }
-
-      65% {
-        background-image: url(images/svamels5.webp);
-      }
-
-      60% {
-        background-image: url(images/svamels4.webp);
-      }
-
-      55% {
-        background-image: url(images/svamels4.webp);
-      }
-
-      50% {
-        background-image: url(images/svamels4.webp);
-      }
-
-      45% {
-        background-image: url(images/svamels5.webp);
-      }
-
-    }
-
     .attonce {
       text-align: center;
-      font-size: 18px;
+      font-size: 20px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
+      font-weight: 400;
       color: rgb(255, 255, 255);
       padding-left: 1px;
       padding-right: 1px;
@@ -723,8 +643,6 @@
 
     .filterDiv {
       lighting-color: whitesmoke;
-      animation: shake 1.1s 1;
-      animation-direction: normal;
       background-color: #030100;
       background-image: url("images/websitebgV2.webp");
       background-repeat: no-repeat;
@@ -758,52 +676,6 @@
       animation-iteration-count: initial;
     }
 
-    @keyframes shake {
-      0% {
-        transform: translate(1px, 1px) rotate(0deg);
-      }
-
-      10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-      }
-
-      20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-      }
-
-      30% {
-        transform: translate(3px, 2px) rotate(0deg);
-      }
-
-      40% {
-        transform: translate(1px, -1px) rotate(1deg);
-      }
-
-      50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-      }
-
-      60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-      }
-
-      70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-      }
-
-      80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-      }
-
-      90% {
-        transform: translate(1px, 2px) rotate(0deg);
-      }
-
-      100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-      }
-    }
-
     .insidewes1 {
       align-items: center;
       background-color: rgba(245, 245, 245, 0.032);
@@ -821,10 +693,10 @@
 
     #cloth-hov-left {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      color: rgb(255, 153, 0);
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       padding-left: 0.5%;
@@ -834,29 +706,14 @@
       margin-left: 28px;
       margin-right: 3px;
       float: left;
-      animation: cloth-hov-left 0.1s infinite ease-out;
-      animation-direction: alternate;
-      animation-duration: 2s;
-    }
-
-    @keyframes cloth-hov-left {
-
-      10% {
-        color: rgb(255, 153, 0);
-      }
-
-      20% {
-        color: rgb(255, 251, 0);
-      }
-
     }
 
     #cloth-hov-right {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      color: rgb(255, 153, 0);
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       padding-left: 0.5%;
@@ -866,29 +723,14 @@
       margin-left: 3px;
       margin-right: 28px;
       float: right;
-      animation: cloth-hov-right 0.1s infinite ease-out;
-      animation-direction: alternate;
-      animation-duration: 2s;
-    }
-
-    @keyframes cloth-hov-right {
-
-      10% {
-        color: rgb(255, 153, 0);
-      }
-
-      20% {
-        color: rgb(255, 251, 0);
-      }
-
     }
 
     #bod-hov-left {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      color: rgb(255, 153, 0);
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       padding-left: 0.5%;
@@ -898,29 +740,14 @@
       margin-left: 28px;
       margin-right: 3px;
       float: left;
-      animation: bod-hov-left 0.1s infinite ease-out;
-      animation-direction: alternate;
-      animation-duration: 2s;
-    }
-
-    @keyframes bod-hov-left {
-
-      10% {
-        color: rgb(255, 153, 0);
-      }
-
-      20% {
-        color: rgb(255, 251, 0);
-      }
-
     }
 
     #bod-hov-right {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      color: rgb(255, 153, 0);
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       padding-left: 0.5%;
@@ -930,29 +757,14 @@
       margin-left: 3px;
       margin-right: 28px;
       float: right;
-      animation: bod-hov-right 0.1s infinite ease-out;
-      animation-direction: alternate;
-      animation-duration: 2s;
-    }
-
-    @keyframes bod-hov-right {
-
-      10% {
-        color: rgb(255, 153, 0);
-      }
-
-      20% {
-        color: rgb(255, 251, 0);
-      }
-
     }
 
     #build-luxury-pro-hov-left {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      color: rgb(255, 153, 0);
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       padding-left: 0.5%;
@@ -962,29 +774,14 @@
       margin-left: 28px;
       margin-right: 3px;
       float: left;
-      animation: build-luxury-pro-hov-left 0.1s infinite ease-out;
-      animation-direction: alternate;
-      animation-duration: 2s;
-    }
-
-    @keyframes build-luxury-pro-hov-left {
-
-      10% {
-        color: rgb(255, 153, 0);
-      }
-
-      20% {
-        color: rgb(255, 251, 0);
-      }
-
     }
 
     #build-luxury-pro-hov-right {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      color: rgb(255, 153, 0);
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       padding-left: 0.5%;
@@ -994,21 +791,6 @@
       margin-left: 3px;
       margin-right: 28px;
       float: right;
-      animation: build-luxury-pro-hov-right 0.1s infinite ease-out;
-      animation-direction: alternate;
-      animation-duration: 2s;
-    }
-
-    @keyframes build-luxury-pro-hov-right {
-
-      10% {
-        color: rgb(255, 153, 0);
-      }
-
-      20% {
-        color: rgb(255, 251, 0);
-      }
-
     }
 
     .wes {
@@ -1023,9 +805,9 @@
 
     .snilog {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
+      font-weight: 400;
       color: rgba(245, 245, 245, 0.972);
       padding-left: 1px;
       padding-right: 1px;
@@ -1047,9 +829,9 @@
       color: rgba(245, 245, 245, 0.972);
       text-align: center;
       align-items: center;
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
-      animation: now-buying-clobnowview 0.7s infinite;
       width: initial;
       height: initial;
       padding-left: 0px;
@@ -1066,55 +848,14 @@
       display: grid;
     }
 
-    @keyframes now-buying-clobnowview {
-
-      30% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      35% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      40% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      50% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-      55% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-      60% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-
-      80% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-      90% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-      100% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-    }
-
     .now-buying-clobnowview:hover {
       color: rgba(245, 245, 245, 0.972);
-      background-color: rgba(255, 255, 255, 0.233);
+      background-color: #383838a6;
       text-align: center;
       align-items: center;
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
-      animation: now-buying-clobnowview 0.7s infinite;
       width: initial;
       height: initial;
       padding-left: 0px;
@@ -1135,9 +876,9 @@
       color: rgba(245, 245, 245, 0.972);
       text-align: center;
       align-items: center;
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
-      animation: now-buying-clobnowview 0.7s infinite;
       width: initial;
       height: initial;
       padding-left: 0px;
@@ -1152,58 +893,16 @@
       text-decoration: none;
       display: -moz-grid;
       display: grid;
-
-    }
-
-    @keyframes now-buying-bodycbnowview {
-
-      30% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      35% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      40% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      50% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-      55% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-      60% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-
-      80% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-      90% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-      100% {
-        background-image: url(images/pcardce5.webp);
-      }
-
     }
 
     .now-buying-bodycbnowview:hover {
       color: rgba(245, 245, 245, 0.972);
-      background-color: rgba(255, 255, 255, 0.233);
+      background-color: #383838a6;
       text-align: center;
       align-items: center;
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
-      animation: now-buying-clobnowview 0.7s infinite;
       width: initial;
       height: initial;
       padding-left: 0px;
@@ -1224,11 +923,11 @@
       color: rgba(245, 245, 245, 0.972);
       text-align: center;
       align-items: center;
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
-      animation: now-buying-clobnowview 0.7s infinite;
-      width: initial;
-      height: initial;
+      width: auto;
+      height: auto;
       padding-left: 0px;
       padding-right: 0px;
       padding-top: 0px;
@@ -1243,57 +942,16 @@
       display: grid;
     }
 
-    @keyframes now-buying-buprobnowview {
-
-      30% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      35% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      40% {
-        background-image: url(images/pcardce1.webp);
-      }
-
-      50% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-      55% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-      60% {
-        background-image: url(images/pcardce2.webp);
-      }
-
-
-      80% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-      90% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-      100% {
-        background-image: url(images/pcardce5.webp);
-      }
-
-    }
-
     .now-buying-buprobnowview:hover {
       color: rgba(245, 245, 245, 0.972);
-      background-color: rgba(255, 255, 255, 0.233);
+      background-color: #383838a6;
       text-align: center;
       align-items: center;
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
-      animation: now-buying-clobnowview 0.7s infinite;
-      width: initial;
-      height: initial;
+      width: auto;
+      height: auto;
       padding-left: 0px;
       padding-right: 0px;
       padding-top: 0px;
@@ -1312,8 +970,8 @@
       text-align: center;
       align-items: baseline;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      font-size: 90%;
+      font-weight: 400;
+      font-size: 91%;
       padding-left: 1%;
       margin-left: 20px;
       margin-right: 20px;
@@ -1328,8 +986,8 @@
       text-align: center;
       align-items: baseline;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      font-size: 90%;
+      font-weight: 400;
+      font-size: 91%;
       padding-left: 1%;
       margin-left: 20px;
       margin-right: 20px;
@@ -1344,8 +1002,8 @@
       text-align: center;
       align-items: baseline;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
-      font-size: 90%;
+      font-weight: 400;
+      font-size: 91%;
       padding-left: 1%;
       margin-left: 20px;
       margin-right: 20px;
@@ -1364,13 +1022,13 @@
       text-align: center;
       font-size: 14.2px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
+      font-weight: 400;
       font: italic;
       font-style: normal;
       color: rgb(253, 228, 0);
       word-spacing: 3px;
-      padding-left: 3%;
-      padding-right: 3%;
+      padding-left: 1%;
+      padding-right: 1%;
       margin-top: 0px;
       margin-bottom: 0px;
       margin-left: 1px;
@@ -1422,7 +1080,7 @@
       color: yellow;
       border-radius: 5px;
       font-family: "Poppings";
-      font-weight: 200;
+      font-weight: 400;
       font-size: 20px;
       align-content: center;
       align-self: center;
@@ -1523,7 +1181,7 @@
       display: inline-flex;
       font-size: 14px;
       font-family: "Poppins";
-      font-weight: 200;
+      font-weight: 400;
       background-color: #0a0a0a;
       color: white;
       border-radius: 50px;
@@ -1574,24 +1232,24 @@
 
     #tos {
       font-family: "Poppins";
-      font-size: 10px;
-      font-weight: 200;
+      font-size: 11px;
+      font-weight: 400;
       text-align: center;
       color: rgb(253, 228, 0);
     }
 
     #license {
       font-family: "Poppins";
-      font-size: 10px;
-      font-weight: 200;
+      font-size: 11px;
+      font-weight: 400;
       text-align: center;
       color: white;
     }
 
     #tac {
       font-family: "Poppins";
-      font-size: 10px;
-      font-weight: 200;
+      font-size: 11px;
+      font-weight: 400;
       text-align: center;
       color: rgb(253, 228, 0);
     }
@@ -1626,8 +1284,8 @@
 
     #registered {
       font-family: "Poppins";
-      font-size: 12px;
-      font-weight: 200;
+      font-size: 13px;
+      font-weight: 400;
       text-align: center;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -1637,7 +1295,7 @@
     #chi {
       font-size: 11px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 200;
+      font-weight: 400;
       padding-top: 0%;
       padding-bottom: 0px;
       margin-top: 3px;
@@ -1735,13 +1393,7 @@
 
   <div class="middle">
     <div class="atton">
-      <h1 class="attonce">We are Independent Affiliate Marketing Professionals for the companies world wide known, and
-        trusted by
-        billions.
-        We
-        are not limited to marketing top grade materials, clothes, bodycare, perfumes, utensils, building materials.
-        Etcetera. But also into real estate marketing.
-        By displaying to you the products, materials, land and properties. Etcetera.</h1>
+      <h1 class="attonce">The Materials That Explain Fashion And Eco-friendly lifestyle.</h1>
     </div>
     <div class="filterDiv clothes">
       <div class="seven">
@@ -2272,7 +1924,7 @@
             </a>
           </picture>
         </div>
-        <div class="filterDiv clothes"><b class="names" title="">Geunine Sneakers</b><br>
+        <div class="filterDiv clothes"><b class="names" title="">Geunine Sneakers V1</b><br>
           <h1 class="snilog">Men Fancy Shoe</h1>
           <picture>
             <source srcset="images.webp" type="image/png/webp">
@@ -2283,7 +1935,7 @@
             </a>
           </picture>
         </div>
-        <div class="filterDiv clothes"><b class="names" title="">Geunine Sneakers</b><br>
+        <div class="filterDiv clothes"><b class="names" title="">Geunine Sneakers V2</b><br>
           <h1 class="snilog">Men Fancy Shoe</h1>
           <picture>
             <source srcset="images.webp" type="image/png/webp">
@@ -2763,7 +2415,7 @@
 <footer>
   <nav>
     <a id="tos" title="tos" href="terms-and-conditions.html">Terms And Conditions</a>
-    <b id="license" title="MIT" href="license.html">(c) 2022 VAMEzeal</b>
+    <b id="license" title="MIT" href="license.html">(c) 2023 VAMEzeal</b>
     <a id="tac" title="privacy-policy-vamezeal-ams" href="privacy-policy-vamezeal-ams.html">Privacy Policy</a><br><br>
     <a class="youtube" href="https://www.youtube.com/channel/UCxozb09Z7aaFjW1o4iOSrLA">
       <img title="youtube" src="images/youtube.png" alt="youtube.png" width="50" height="initial"></a>
