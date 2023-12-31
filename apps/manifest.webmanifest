@@ -14,5 +14,24 @@
       {
         "src": "//vamezeal.com.ng/images/Recliner-Nordic-Sofa-Living-Room-Luxury-Modern-Handrail-Canape-Gonflabe-Salon-Furniture-MQ50SF-VSofa1.webp"
       }
-    ]
+    ],
+
+    "file_handlers": [
+        {
+          "action": "https://vamezeal.com.ng/images",
+          "accept": {
+            "image/*": [".webp",".png", ".gif", ".jpeg", ".jpg"],
+            "audio/wav": [".wav"],
+            "audio/x-wav": [".wav"],
+            "audio/mpeg": [".mp3"],
+            "audio/mp4": [".mp4"],
+            "audio/aac": [".adts"],
+            "audio/ogg": [".ogg"],
+            "application/ogg": [".ogg"],
+            "audio/webm": [".webm"],
+            "audio/flac": [".flac"],
+            "audio/mid": [".rmi", ".mid"]
+          }
+        }
+      ]
   }
