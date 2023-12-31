@@ -1,0 +1,22 @@
+{
+    "name": "VAMEZeal",
+    "short_name": "App",
+    "description": "An Affiliate Marketing App. And The Property of (SniffTegist)",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "rgb(255, 255, 255)",
+    "theme_color": "#0f0f0f",
+    "icons": [
+      {
+        "src": "/images/vamezeallogo.webp",
+        "type": "image/png/webp",
+        "sizes": "initial"
+      },
+      {
+        "src": "/images/Recliner-Nordic-Sofa-Living-Room-Luxury-Modern-Handrail-Canape-Gonflabe-Salon-Furniture-MQ50SF-VSofa1.webp",
+        "type": "image/png/webp",
+        "sizes": "initial"
+      }
+    ]
+  }
+  
