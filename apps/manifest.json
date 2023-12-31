@@ -2,6 +2,7 @@
     "name": "VAMEZeal",
     "short_name": "App",
     "description": "An Affiliate Marketing App. And The Property of (SniffTegist)",
+    "categories": ["affiliate marketing", "clothes", "shirts", "oral care", "shoes", "soaps", "trausers", "skirts", "panties", "boots", "building", "land", "properties", "watches", "rings", "belts", "beauty", "yoga", "cargo", "phones", "hair", "skin care", "electronics"],
     "start_url": "https://vamezeal.com.ng",
     "display": "standalone",
     "background_color": "rgb(255, 255, 255)",
