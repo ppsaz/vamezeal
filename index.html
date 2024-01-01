@@ -1257,142 +1257,44 @@
       margin-bottom: 0%;
       color: whitesmoke;
     }
+
+    #cookieConsentBanner {
+      align-content: center;
+            position: fixed;
+            bottom: 0;
+            width: auto;
+            height: auto;
+            background-color: #030100;
+            margin-left: 0px;
+            margin-right: 4.1px;
+            padding: 0px;
+            text-align: center;
+            font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+            font-size: 14px;
+      font-weight: 400;
+      color: whitesmoke;
+      text-decoration: none;
+        }
+
+        #vc-yes {
+          text-decoration: none;
+          color: rgb(253, 228, 0);
+          margin-right: 3px;
+        }
+
+        #cookieConsentButton {
+          background-color: whitesmoke;
+          color: black;
+          border-style: none;
+          border-radius: 5px;
+          text-align: center;
+            font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+            font-size: 14px;
+      font-weight: 400;
+        }
+
   </style>
 
-  <script>// Note that we are setting `SameSite=None;` in this example because the example
-    // needs to work cross-origin.
-    // It is more common not to set the `SameSite` attribute, which results in the default,
-    // and more secure, value of `SameSite=Lax;`
-    document.cookie = "name=snifftegist; SameSite=None; Secure";
-    document.cookie = "favorite_food=cookie; SameSite=None; Secure";
-
-    function showCookies() {
-      const output = document.getElementById("cookies");
-      output.textContent = `> ${document.cookie}`;
-    }
-
-    function clearOutputCookies() {
-      const output = document.getElementById("cookies");
-      output.textContent = "";
-    }
-
-    // Note that we are setting `SameSite=None;` in this example because the example
-    // needs to work cross-origin.
-    // It is more common not to set the `SameSite` attribute, which results in the default,
-    // and more secure, value of `SameSite=Lax;`
-    document.cookie = "test1=Hello; SameSite=None; Secure";
-    document.cookie = "test2=Visitor; SameSite=None; Secure";
-
-    const cookieValue = document.cookie
-      .split("; ")
-      .find((row) => row.startsWith("test2="))
-      ?.split("=")[1];
-
-    function showCookieValue() {
-      const output = document.getElementById("cookie-value");
-      output.textContent = `> ${cookieValue}`;
-    }
-
-    function clearOutputCookieValue() {
-      const output = document.getElementById("cookie-value");
-      output.textContent = "";
-    }
-
-    function doOnce() {
-      if (
-        !document.cookie
-          .split("; ")
-          .find((row) => row.startsWith("doSomethingOnlyOnce"))
-      ) {
-
-        // Note that we are setting `SameSite=None;` in this example because the example
-        // needs to work cross-origin.
-        // It is more common not to set the `SameSite` attribute, which results in the default,
-        // and more secure, value of `SameSite=Lax;`
-        document.cookie =
-          "doSomethingOnlyOnce=true; expires=Tue, 31 Dec 2024 23:59:59 GMT; SameSite=None; Secure";
-
-        const output = document.getElementById("do-once");
-        output.textContent = "> Do something here!";
-      }
-    }
-
-    function clearOutputDoOnce() {
-      const output = document.getElementById("do-once");
-      output.textContent = "";
-    }
-
-    function resetOnce() {
-      // Note that we are setting `SameSite=None;` in this example because the example
-      // needs to work cross-origin.
-      // It is more common not to set the `SameSite` attribute, which results in the default,
-      // and more secure, value of `SameSite=Lax;`
-      document.cookie =
-        "doSomethingOnlyOnce=; expires=Mon, 01 Jan 2024 00:00:00 GMT; SameSite=None; Secure";
-
-      const output = document.getElementById("reset-once");
-      output.textContent = "> Reset!";
-    }
-
-    function clearOutputResetOnce() {
-      const output = document.getElementById("reset-once");
-      output.textContent = "";
-    }
-
-    // Note that we are setting `SameSite=None;` in this example because the example
-    // needs to work cross-origin.
-    // It is more common not to set the `SameSite` attribute, which results in the default,
-    // and more secure, value of `SameSite=Lax;`
-    document.cookie = "reader=1; SameSite=None; Secure";
-
-    function checkACookieExists() {
-      if (
-        document.cookie.split(";").some((item) => item.trim().startsWith("reader="))
-      ) {
-        const output = document.getElementById("a-cookie-existence");
-        output.textContent = '> The cookie "reader" exists';
-      }
-    }
-
-    function clearOutputACookieExists() {
-      const output = document.getElementById("a-cookie-existence");
-      output.textContent = "";
-    }
-
-    function setCookie(cname, cvalue, exdays) {
-      const d = new Date();
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      let expires = "expires=" + d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/.";
-    }
-
-    function getCookie(cname) {
-      let name = cname + "=";
-      let ca = document.cookie.split(';');
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-
-    function checkCookie() {
-      let user = getCookie("username");
-      if (user != "") {
-        alert("Welcome back" + user);
-      } else {
-        user = prompt("Please enter your name:", "");
-        if (user != "" && user != "Drsniff") {
-          setCookie("username", user, 365);
-        }
-      }
-    }
-  </script>
   <meta name="verify-admitad" content="887798abde" />
 
 </head>
@@ -2463,14 +2365,51 @@
         })
     </script>
 
-    <script type="text/javascript">
-      aclib.runAutoTag({
-        zoneId: 'bl2crboc4w',
-      });
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsentBanner">
+      <p id="vc-yes-message">
+        We "VAMEZeal" use cookies to enhance your experience on our site. By continuing to use our site, you agree to our use of
+        cookies, as described in our
+        <a id="vc-yes" href="https://vamezeal.com.ng/privacy-policy-vamezeal-ams" target="_blank" rel="noopener noreferrer">Cookie Policy</a>references.
+        <button id="cookieConsentButton">I Agree</button>
+      </p>
+    </div>
+
+    <!-- Your JavaScript goes here -->
+    <script>
+      // Set cookie
+      function setCookie(name, value, days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+        document.cookie = name + "=" + value + expires + "; path=/";
+      }
+  
+      // Get cookie
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      }
+  
+      // Check if cookie is set
+      if (getCookie('cookieConsent') === null) {
+        // If not, set cookie and show the banner
+        setCookie('VAMEZealCookie', 'VAMEZealValue', 360); // The cookie expires in 360 days
+        document.getElementById('cookieConsentBanner').style.display = 'block';
+      }
+  
+      // When the user accepts, set the cookie and hide the banner
+      document.getElementById('cookieConsentButton').onclick = function () {
+        setCookie('cookieConsent', 'true', 365);
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+      };
     </script>
-
-
-
 </body>
 
 <div id="snifftegistl" title="Web Developer"><img id="weblog" title="snifftegist" src="images/snifftegistlogo.png"

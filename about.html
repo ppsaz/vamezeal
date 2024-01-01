@@ -838,138 +838,31 @@
       color: whitesmoke;
     }
   </style>
-  <script>// Note that we are setting `SameSite=None;` in this example because the example
-    // needs to work cross-origin.
-    // It is more common not to set the `SameSite` attribute, which results in the default,
-    // and more secure, value of `SameSite=Lax;`
-    document.cookie = "name=snifftegist; SameSite=None; Secure";
-    document.cookie = "favorite_food=cookie; SameSite=None; Secure";
-
-    function showCookies() {
-      const output = document.getElementById("cookies");
-      output.textContent = `> ${document.cookie}`;
+  <script>
+    // Set cookie
+    function setCookie(name, value, days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days *24*60*60*1000));
+      var expires = "; expires=" + date.toGMTString();
+      document.cookie = name + "=" + value + expires + "; path=/";
     }
 
-    function clearOutputCookies() {
-      const output = document.getElementById("cookies");
-      output.textContent = "";
-    }
-
-    // Note that we are setting `SameSite=None;` in this example because the example
-    // needs to work cross-origin.
-    // It is more common not to set the `SameSite` attribute, which results in the default,
-    // and more secure, value of `SameSite=Lax;`
-    document.cookie = "test1=Hello; SameSite=None; Secure";
-    document.cookie = "test2=Visitor; SameSite=None; Secure";
-
-    const cookieValue = document.cookie
-      .split("; ")
-      .find((row) => row.startsWith("test2="))
-      ?.split("=")[1];
-
-    function showCookieValue() {
-      const output = document.getElementById("cookie-value");
-      output.textContent = `> ${cookieValue}`;
-    }
-
-    function clearOutputCookieValue() {
-      const output = document.getElementById("cookie-value");
-      output.textContent = "";
-    }
-
-    function doOnce() {
-      if (
-        !document.cookie
-          .split("; ")
-          .find((row) => row.startsWith("doSomethingOnlyOnce"))
-      ) {
-
-        // Note that we are setting `SameSite=None;` in this example because the example
-        // needs to work cross-origin.
-        // It is more common not to set the `SameSite` attribute, which results in the default,
-        // and more secure, value of `SameSite=Lax;`
-        document.cookie =
-          "doSomethingOnlyOnce=true; expires=Tue, 31 Dec 2024 23:59:59 GMT; SameSite=None; Secure";
-
-        const output = document.getElementById("do-once");
-        output.textContent = "> Do something here!";
+    // Get cookie
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
       }
+      return null;
     }
 
-    function clearOutputDoOnce() {
-      const output = document.getElementById("do-once");
-      output.textContent = "";
-    }
-
-    function resetOnce() {
-      // Note that we are setting `SameSite=None;` in this example because the example
-      // needs to work cross-origin.
-      // It is more common not to set the `SameSite` attribute, which results in the default,
-      // and more secure, value of `SameSite=Lax;`
-      document.cookie =
-        "doSomethingOnlyOnce=; expires=Mon, 01 Jan 2024 00:00:00 GMT; SameSite=None; Secure";
-
-      const output = document.getElementById("reset-once");
-      output.textContent = "> Reset!";
-    }
-
-    function clearOutputResetOnce() {
-      const output = document.getElementById("reset-once");
-      output.textContent = "";
-    }
-
-    // Note that we are setting `SameSite=None;` in this example because the example
-    // needs to work cross-origin.
-    // It is more common not to set the `SameSite` attribute, which results in the default,
-    // and more secure, value of `SameSite=Lax;`
-    document.cookie = "reader=1; SameSite=None; Secure";
-
-    function checkACookieExists() {
-      if (
-        document.cookie.split(";").some((item) => item.trim().startsWith("reader="))
-      ) {
-        const output = document.getElementById("a-cookie-existence");
-        output.textContent = '> The cookie "reader" exists';
-      }
-    }
-
-    function clearOutputACookieExists() {
-      const output = document.getElementById("a-cookie-existence");
-      output.textContent = "";
-    }
-
-    function setCookie(cname, cvalue, exdays) {
-      const d = new Date();
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      let expires = "expires=" + d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/.";
-    }
-
-    function getCookie(cname) {
-      let name = cname + "=";
-      let ca = document.cookie.split(';');
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-
-    function checkCookie() {
-      let user = getCookie("username");
-      if (user != "") {
-        alert("Welcome back" + user);
-      } else {
-        user = prompt("Please enter your name:", "");
-        if (user != "" && user != "Drsniff") {
-          setCookie("username", user, 365);
-        }
-      }
+    // Check if cookie is set
+    if (getCookie('myCookie') === null) {
+      // If not, set the cookie
+      setCookie('myCookie', 'myValue', 360); // The cookie expires in 360 days
     }
   </script>
 

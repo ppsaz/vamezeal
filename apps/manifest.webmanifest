@@ -1,6 +1,8 @@
 {
-    "name": "VAMEZeal",
-    "short_name": "App",
+    "name": "VAMEZeal Application",
+    "short_name": "VAMEZeal App",
+    "lang": "en",
+    "scope": "https://vamezeal.com.ng/",
     "description": "An Affiliate Marketing App. And The Property of (SniffTegist)",
     "categories": ["affiliate marketing", "clothes", "shirts", "oral care", "shoes", "soaps", "trausers", "skirts", "panties", "boots", "building", "land", "properties", "watches", "rings", "belts", "beauty", "yoga", "cargo", "phones", "hair", "skin care", "electronics"],
     "start_url": "https://vamezeal.com.ng/?online-shop=1",
@@ -15,5 +17,6 @@
         "src": "//vamezeal.com.ng/images/Recliner-Nordic-Sofa-Living-Room-Luxury-Modern-Handrail-Canape-Gonflabe-Salon-Furniture-MQ50SF-VSofa1.webp"
       }
     ]
+    
 
   }
