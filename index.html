@@ -1254,9 +1254,10 @@
       height: auto;
       background-position: center;
       background-color: #030100;
-      margin-left: 0px;
-      margin-right: 4.1px;
-      padding: 0px;
+      margin-right: 1vw;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 3vh;
       text-align: center;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
       font-size: 14px;
@@ -1265,10 +1266,20 @@
       text-decoration: none;
     }
 
+    #vc-yes-message {
+      text-align: center;
+      background-position: center;
+      padding-left: 2px;
+      padding-right: 2px;
+      flex-wrap: wrap;
+    }
+
     #vc-yes {
       text-decoration: none;
       color: rgb(253, 228, 0);
       margin-right: 3px;
+      text-align: center;
+      background-position: center;
     }
 
     #cookieConsentButton {
@@ -1280,6 +1291,12 @@
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
       font-size: 14px;
       font-weight: 400;
+    }
+
+    #cookie-sweet {
+      flex-wrap: nowrap;
+      display: flexbox;
+      margin-top: 1;
     }
   </style>
 
@@ -2350,17 +2367,32 @@
     <!-- Cookie Consent Banner -->
     <div id="cookieConsentBanner">
       <p id="vc-yes-message">
-        We "VAMEZeal" use cookies to enhance your experience on our site. By continuing to use our site, you agree to
+        We "VAMEZeal Independent Marketing" use cookies to enhance your experience on our site. By continuing to use our site, you agree to
         our use of
         cookies, as described in our
         <a id="vc-yes" href="https://vamezeal.com.ng/privacy-policy-vamezeal-ams" target="_blank"
-          rel="noopener noreferrer">Cookie Policy</a>references.
-        <button id="cookieConsentButton">I Agree</button>
+          rel="noopener noreferrer">Cookie Policy</a>
+        
       </p>
+      <img id="cookie-sweet" title="cookie.png" src="images/cookie.png" alt="" width="initial" height="50"><br>
+      <button id="cookieConsentButton" onclick="acceptCookies()">I Agree</button>
     </div>
 
-    <!-- Your JavaScript goes here -->
+    <!-- VAMEZeal Cookie Controller -->
     <script>
+      // Cookie
+      window.onload = function () {
+        if (!getCookie('cookieConsent')) {
+          document.getElementById('cookieConsentBanner').style.display = 'block';
+        }
+      }
+
+      // Accept cookie
+      function acceptCookies() {
+        setCookie('cookieConsent', 'true', 365);
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+      }
+
       // Set cookie
       function setCookie(name, value, days) {
         var date = new Date();
@@ -2371,14 +2403,19 @@
 
       // Get cookie
       function getCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
+        var name = name + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
         for (var i = 0; i < ca.length; i++) {
           var c = ca[i];
-          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
         }
-        return null;
+        return "";
       }
 
       // Check if cookie is set
@@ -2395,8 +2432,7 @@
       };
     </script>
 
-    <!-- Adcash Native -->
-<script data-cfasync="false" type="text/javascript" src="//predictiondisplay.com/a/display.php?r=7906902"></script>
+    <!-- Ads Native -->
 </body>
 
 <div id="snifftegistl" title="Web Developer"><img id="weblog" title="snifftegist" src="images/snifftegistlogo.png"
