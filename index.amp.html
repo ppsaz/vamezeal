@@ -1,0 +1,2810 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title title="vamezeal">VAMEZeal</title>
+  <link rel="canonical" href="https://vamezeal.com.ng/index">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="shortcut icon" href="images/vamezeallogo.png" type="image/x-icon" title="vamezeallogo">
+  <link rel="apple-touch-icon" href="images/vamezeallogo.png" title="vamezeallogo">
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+  <meta name="amp-script-src" content="sha384-YCFs8k-ouELcBTgzKzNAujZFxygwiqimSqKK7JqeKaGNflwDxaC3g2toj7s_kxWG" />
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <!-- Amp mega menu and form -->
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Article headline",
+      "image": ["thumbnail1.jpg"],
+      "datePublished": "2015-02-05T08:00:00+08:00"
+    }
+  </script>
+
+  <style amp-custom>
+    html {
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+
+    body {
+      width: initial;
+      height: 100vh;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      background: url("images/bgpool-red-borderV1.webp");
+      background-repeat: no-repeat;
+      background-size: 100dvw;
+      padding: 0.1vmin;
+      margin: 0.1vmin;
+      border-radius: 11px;
+    }
+
+    header {
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+    }
+
+    .menu {
+      padding-top: 5px;
+      padding-bottom: 2px;
+      margin-top: 2px;
+      margin-bottom: 10px;
+      margin-left: 1px;
+      margin-right: 16px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      width: auto;
+      height: auto;
+      text-align: center;
+      float: left;
+      margin: 0.5%;
+      position: static;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .buttons {
+      float: right;
+      padding: 2px;
+      margin: 2px;
+      word-wrap: break-word;
+      word-break: break-all;
+      flex-wrap: wrap;
+      width: initial;
+    }
+
+    .seeing {
+      margin-top: 0.5px;
+      margin-bottom: 0.5px;
+      margin-left: 0px;
+      margin-right: 5px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+      padding-right: 5px;
+      color: rgb(253, 228, 0);
+      background-color: #0f0f0f;
+      text-align: center;
+      width: auto;
+      height: auto;
+      float: right;
+      font-size: 16px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+    }
+
+    a.seeing:link {
+      text-decoration: none;
+      font-size: 18px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      border-radius: 20px;
+      margin-top: 0.5px;
+      margin-bottom: 0.5px;
+      margin-left: 0px;
+      margin-right: 5px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    a.seeing:hover {
+      padding-left: 7px;
+      padding-right: 7px;
+      margin-left: 2px;
+      margin-right: 2px;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      background-color: rgba(255, 255, 255, 0.233);
+      border-radius: 20px;
+    }
+
+    b.seeing {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-left: 7px;
+      padding-right: 7px;
+      background-color: #0f0f0f;
+      text-align: center;
+      width: auto;
+      float: right;
+      border-radius: 50px;
+      font-size: 18px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+    }
+
+    #show {
+      background-image: url("images/show.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: static;
+      color: whitesmoke;
+      text-align: center;
+      font-size: 16px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      word-spacing: initial;
+      width: initial;
+      height: initial;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 35px;
+      padding-right: 5px;
+      margin-top: 0px;
+      margin-bottom: 0%;
+      margin-left: 3px;
+      margin-right: 3px;
+      text-decoration: none;
+    }
+
+    #about {
+      background-image: url("images/about.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: static;
+      text-align: center;
+      font-size: 16px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      word-spacing: initial;
+      width: initial;
+      height: initial;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+      padding-right: 5px;
+      margin-top: 0px;
+      margin-bottom: 0%;
+      margin-left: 3px;
+      margin-right: 3px;
+      text-decoration: none;
+    }
+
+    #marketer {
+      background-image: url("images/marketer.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: static;
+      text-align: center;
+      font-size: 16px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      word-spacing: initial;
+      width: initial;
+      height: initial;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 34px;
+      padding-right: 5px;
+      margin-top: 0px;
+      margin-bottom: 0%;
+      margin-left: 3px;
+      margin-right: 3px;
+      text-decoration: none;
+    }
+
+    #myInput {
+      width: initial;
+      height: initial;
+      text-align: center;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      /* Increase font-size */
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      /* Add some padding */
+      border-radius: 20px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      /* Add some space below the input */
+      margin-left: 1px;
+      margin-right: 1px;
+      border-color: green;
+      border-style: none;
+      border-left-style: outset;
+      border-right-style: outset;
+      background-color: black;
+      column-fill: auto;
+      color: white;
+    }
+
+    h2#koi {
+      background-color: #0a0a0a;
+      color: whitesmoke;
+      text-align: center;
+      font-size: 25px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      border-radius: 1px;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .nav-button {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    .nav-button:hover {
+      background-color: green;
+      color: white;
+    }
+
+    #myBtnmiddle {
+      background-image: url("images/bgnavbuttons.webp");
+      background-repeat: no-repeat;
+      background-size: 100dvw;
+      position: relative;
+      text-align: center;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      margin-top: 10px;
+      margin-bottom: 3px;
+      margin-left: 1px;
+      margin-right: 1px;
+      color: whitesmoke;
+      background-color: black;
+      border-radius: 5px;
+      justify-content: center;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: 3px;
+      margin-right: 3px;
+      background-color: #0a0a0a;
+      background-image: url("images/btnV1.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      animation: normal;
+      color: rgb(253, 228, 0);
+      font-size: 15px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      border-radius: 20px;
+    }
+
+    .btn:hover {
+      background-color: #0a0a0a;
+      color: rgb(9, 255, 0);
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: 3px;
+      margin-right: 3px;
+      border-radius: 20px;
+      font-size: 15px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+    }
+
+    .btn.active {
+      background-image: url("images/btnV1-act.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-position: center;
+      background-color: #0a0a0a;
+      color: rgb(80, 253, 0);
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: 3px;
+      margin-right: 3px;
+      text-align: center;
+      animation: btn-catg-top 3s infinite;
+      animation-direction: normal;
+      animation-duration: 1s initial;
+      border-width: 0.5px;
+      border-radius: 20px;
+      border-left: 0.01;
+      border-right: 0.01;
+      border-left-style: groove;
+      border-right-style: groove;
+      border-left-color: whitesmoke;
+      border-right-color: whitesmoke;
+    }
+
+
+    .atton {
+      background-image: url("images/svamels5.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: rgba(255, 255, 255, 0.033);
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: 1px;
+      margin-right: 1px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+    }
+
+    .attonce {
+      text-align: center;
+      font-size: 4vmin;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: 1px;
+      margin-right: 1px;
+      width: initial;
+      height: initial;
+    }
+
+    .seven {
+      background-color: #0a0a0a;
+      width: auto;
+      height: auto;
+      text-align: center;
+      align-self: center;
+      padding-top: 18%;
+      padding-bottom: 18%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 2px;
+      margin-right: 2px;
+      border-radius: 5px;
+      background-image: url("images/svamebs5.webp");
+      background-size: 100%;
+    }
+
+    .middle {
+      overflow: hidden;
+      text-align: center;
+      background-color: black;
+      border-radius: 5px;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0.5px;
+      padding-bottom: 0.5px;
+      margin-top: 1px;
+      margin-bottom: 5px;
+      margin-left: 1px;
+      margin-right: 1px;
+      enable-background: initial;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -ms-flex-order: inherit;
+      -moz-box-flexgroup: initial;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    #global_V {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      margin-left: 1px;
+      margin-right: 1px;
+      border-radius: 5px;
+      display: flex;
+      text-align: center;
+      background-color: #181818;
+      color: white;
+      overflow: auto;
+      width: initial;
+      height: initial;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -ms-flex-order: inherit;
+      -moz-box-flexgroup: initial;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    #shop_M {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      margin-left: 1px;
+      margin-right: 1px;
+      border-radius: 5px;
+      display: flex;
+      text-align: center;
+      background-color: #181818;
+      color: white;
+      overflow: auto;
+      width: initial;
+      height: initial;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -ms-flex-order: inherit;
+      -moz-box-flexgroup: initial;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    #netizen_G {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      margin-left: 1px;
+      margin-right: 1px;
+      border-radius: 5px;
+      display: flex;
+      text-align: center;
+      background-color: #181818;
+      color: white;
+      overflow: auto;
+      width: initial;
+      height: initial;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -ms-flex-order: inherit;
+      -moz-box-flexgroup: initial;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .vamezealIAM {
+      lighting-color: whitesmoke;
+      animation-direction: normal;
+      background-color: #030100;
+      background-image: url("images/websitebgV2.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* Responsive font size */
+      color: black;
+      width: auto;
+      height: auto;
+      text-align: center;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
+      margin-left: 2px;
+      margin-right: 2px;
+      border-radius: 5px;
+      display: none;
+      /* Hidden by defadivt */
+      -ms-flex: auto;
+      flex: auto;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -ms-flex-order: inherit;
+      -moz-box-flexgroup: initial;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      animation-iteration-count: initial;
+    }
+
+    .insidewes1 {
+      align-items: center;
+      background-color: rgba(245, 245, 245, 0.032);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: 1px;
+      margin-right: 1px;
+      border-top-left-radius: 1px;
+      border-top-right-radius: 1px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    #cloth-hov-left {
+      text-align: center;
+      font-size: 13px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
+      margin-left: 28px;
+      margin-right: 3px;
+      float: left;
+    }
+
+    #cloth-hov-right {
+      text-align: center;
+      font-size: 13px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
+      margin-left: 3px;
+      margin-right: 28px;
+      float: right;
+    }
+
+    #bod-hov-left {
+      text-align: center;
+      font-size: 13px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
+      margin-left: 28px;
+      margin-right: 3px;
+      float: left;
+    }
+
+    #bod-hov-right {
+      text-align: center;
+      font-size: 13px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
+      margin-left: 3px;
+      margin-right: 28px;
+      float: right;
+    }
+
+    #build-luxury-pro-hov-left {
+      text-align: center;
+      font-size: 13px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
+      margin-left: 28px;
+      margin-right: 3px;
+      float: left;
+    }
+
+    #build-luxury-pro-hov-right {
+      text-align: center;
+      font-size: 13px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
+      margin-left: 3px;
+      margin-right: 28px;
+      float: right;
+    }
+
+    .wes {
+      text-align: center;
+      font-size: 20px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgb(255, 251, 0);
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .snilog {
+      text-align: center;
+      font-size: 13px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.972);
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: 1px;
+      margin-right: 1px;
+      width: initial;
+      height: initial;
+    }
+
+    .imgage-marketing {
+      border-radius: 5%;
+    }
+
+    .body-care {
+      border-radius: 5%;
+    }
+
+    .now-buying-clobnowview {
+      color: rgba(245, 245, 245, 0.972);
+      text-align: center;
+      align-items: center;
+      background-image: url("images/pcardce5.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: initial;
+      height: initial;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-left: 39%;
+      margin-right: 34%;
+      margin-top: 0%;
+      margin-bottom: 1%;
+      border-radius: 3px;
+      text-decoration: none;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-clobnowview:hover {
+      color: rgba(245, 245, 245, 0.972);
+      background-color: #383838a6;
+      text-align: center;
+      align-items: center;
+      background-image: url("images/pcardce5.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: initial;
+      height: initial;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-left: 39%;
+      margin-right: 34%;
+      margin-top: 0%;
+      margin-bottom: 1%;
+      border-radius: 3px;
+      text-decoration: none;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-bodycbnowview {
+      color: rgba(245, 245, 245, 0.972);
+      text-align: center;
+      align-items: center;
+      background-image: url("images/pcardce5.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: initial;
+      height: initial;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-left: 39%;
+      margin-right: 34%;
+      margin-top: 0%;
+      margin-bottom: 1%;
+      border-radius: 3px;
+      text-decoration: none;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-bodycbnowview:hover {
+      color: rgba(245, 245, 245, 0.972);
+      background-color: #383838a6;
+      text-align: center;
+      align-items: center;
+      background-image: url("images/pcardce5.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: initial;
+      height: initial;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-left: 39%;
+      margin-right: 34%;
+      margin-top: 0%;
+      margin-bottom: 1%;
+      border-radius: 3px;
+      text-decoration: none;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-buprobnowview {
+      color: rgba(245, 245, 245, 0.972);
+      text-align: center;
+      align-items: center;
+      background-image: url("images/pcardce5.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: auto;
+      height: auto;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-left: 45%;
+      margin-right: 42%;
+      margin-top: 0%;
+      margin-bottom: 1%;
+      border-radius: 3px;
+      text-decoration: none;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-buprobnowview:hover {
+      color: rgba(245, 245, 245, 0.972);
+      background-color: #383838a6;
+      text-align: center;
+      align-items: center;
+      background-image: url("images/pcardce5.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: auto;
+      height: auto;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-left: 45%;
+      margin-right: 42%;
+      margin-top: 0%;
+      margin-bottom: 1%;
+      border-radius: 3px;
+      text-decoration: none;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-clobnow-ctr {
+      text-align: center;
+      align-items: baseline;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      font-size: 91%;
+      padding-left: 1%;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 1px;
+      text-decoration: none;
+      color: white;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-bodycbnow-ctr {
+      text-align: center;
+      align-items: baseline;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      font-size: 91%;
+      padding-left: 1%;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 1px;
+      text-decoration: none;
+      color: white;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .now-buying-buprobnow-ctr {
+      text-align: center;
+      align-items: baseline;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      font-size: 91%;
+      padding-left: 1%;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 1px;
+      text-decoration: none;
+      color: white;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    .names {
+      background-image: url("images/website-names-bgV1.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      font-size: 15px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      font: italic;
+      font-style: normal;
+      color: rgb(253, 228, 0);
+      word-spacing: 3px;
+      padding-left: 1%;
+      padding-right: 1%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 1px;
+      margin-right: 1px;
+      border-radius: 5%;
+    }
+
+    img.products3 {
+      animation: shake 0.5s;
+      animation-iteration-count: initial;
+      text-align: center;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      border-radius: 5px;
+      width: 350px;
+      height: initial;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .p-descript {
+      color: whitesmoke;
+      text-align: center;
+      font-size: 14px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      word-spacing: initial;
+      width: initial;
+      height: initial;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .review-marketer {
+      overflow: hidden;
+      text-align: center;
+      background-color: black;
+      color: yellow;
+      border-radius: 5px;
+      font-family: "Poppings";
+      font-weight: 400;
+      font-size: 20px;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      padding-left: 0.5px;
+      padding-right: 0.5px;
+      padding-top: 0.5px;
+      padding-bottom: 0.5px;
+      margin-top: 1px;
+      margin-bottom: 0px;
+      margin-left: 1px;
+      margin-right: 1px;
+      enable-background: initial;
+    }
+
+    a#review-marketer-top-menu {
+      text-decoration: none;
+      border-radius: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      margin-right: 20px;
+      width: initial;
+      height: initial;
+      -ms-flex: initial;
+      flex: initial;
+      float: right;
+      display: flex;
+    }
+
+    a#review-marketer-bottom-menu {
+      text-decoration: none;
+      border-radius: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: initial;
+      height: initial;
+    }
+
+    a#review-marketer-bottom-menu:hover {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      border-radius: 50px;
+    }
+
+    #rate-us-top-menu {
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      animation: change-top 2s infinite ease-in-out;
+      border-radius: 50px;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      width: initial;
+      height: initial;
+    }
+
+    @keyframes change-top {
+
+      1% {
+        background-image: url(images/stars.webp);
+      }
+
+      5% {
+        background-image: url(images/starsrating.webp);
+      }
+
+    }
+
+    #rate-us-bottom-menu {
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      animation: change 2s infinite ease-in-out;
+      border-radius: 50px;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      width: initial;
+      height: initial;
+    }
+
+    @keyframes change {
+
+      1% {
+        background-image: url(images/stars.webp);
+      }
+
+      5% {
+        background-image: url(images/starsrating.webp);
+      }
+
+    }
+
+    #snifftegistl {
+      text-align: center;
+      display: inline-flex;
+      font-size: 14px;
+      font-family: "Poppins";
+      font-weight: 400;
+      background-color: #0a0a0a;
+      color: white;
+      border-radius: 50px;
+      margin-top: 1px;
+      margin-bottom: 5px;
+      padding-left: 2px;
+      padding-right: 6.1px;
+    }
+
+    footer {
+      background-color: black;
+      color: #181818;
+      text-align: center;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      margin-left: 1px;
+      margin-right: 1px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    nav {
+      color: white;
+      background-color: #0a0a0a;
+      padding-top: 1%;
+      padding-bottom: 0px;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    nav a:link {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: "Poppins";
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    #tos {
+      font-family: "Poppins";
+      font-size: 11px;
+      font-weight: 400;
+      text-align: center;
+      color: rgb(253, 228, 0);
+    }
+
+    #license {
+      font-family: "Poppins";
+      font-size: 11px;
+      font-weight: 400;
+      text-align: center;
+      color: white;
+    }
+
+    #tac {
+      font-family: "Poppins";
+      font-size: 11px;
+      font-weight: 400;
+      text-align: center;
+      color: rgb(253, 228, 0);
+    }
+
+    .youtube {
+      background-color: transparent;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    .whatsapp {
+      background-color: transparent;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    .caller {
+      background-color: transparent;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    .message {
+      background-color: transparent;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    #registered {
+      font-family: "Poppins";
+      font-size: 13px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    #chi {
+      font-size: 11px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-weight: 400;
+      padding-top: 0%;
+      padding-bottom: 0px;
+      margin-top: 3px;
+      margin-bottom: 0%;
+      color: whitesmoke;
+    }
+
+    #cookieConsentBanner {
+      position: fixed;
+      bottom: 0;
+      width: auto;
+      height: auto;
+      background-position: center;
+      background-color: #030100;
+      margin-right: 1vw;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 3vh;
+      text-align: center;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    #vc-yes-message {
+      text-align: center;
+      background-position: center;
+      padding-left: 2px;
+      padding-right: 2px;
+      flex-wrap: wrap;
+    }
+
+    #vc-yes {
+      text-decoration: none;
+      color: rgb(253, 228, 0);
+      margin-right: 3px;
+      text-align: center;
+      background-position: center;
+    }
+
+    #cookieConsentButton {
+      background-color: whitesmoke;
+      color: black;
+      border-style: none;
+      border-radius: 5px;
+      text-align: center;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    #cookie-sweet {
+      flex-wrap: nowrap;
+      display: flexbox;
+      margin-top: 1;
+    }
+
+    #va-DL {
+      border-radius: 50px;
+      width: auto;
+      height: auto;
+      text-align: center;
+      float: right;
+      margin: 0.5%;
+      position: static;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    #Ads-M1 {
+      border: 1.5px;
+      border-style: outset;
+      border-color: whitesmoke;
+      background-color: #030100;
+      border-radius: 50px;
+      text-align: center;
+      margin-top: 5px;
+      margin-right: 3.3px;
+    }
+
+    #Ads-M1:hover {
+      border: 1.5px;
+      border-style: outset;
+      border-color: #030100;
+      background-color: #0a0a0a;
+      border-radius: 50px;
+      text-align: center;
+      margin-top: 5px;
+      margin-right: 3.3px;
+    }
+  </style>
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none;
+      }
+    </style>
+  </noscript>
+
+</head>
+
+<body>
+  <!-- Adsense -->
+  <amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-4691274447903077" data-ad-slot="4607668698"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+  </amp-ad>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6KNQHKG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- header -->
+  <header>
+    <a id="va-DL" title="Boon"
+      href="https://www.toprevenuegate.com/cf604kmqej?key=820e5a41a5496a88ec3cd1381a8b4ee3"><img id="Ads-M1" title=""
+        src="images/Ads-M2.png" alt="" width="40" height="40"></a>
+    <div class="menu">
+      <div class="logo"><img id="logo" title="vamezeal" src="images/vamezeallogo.webp" alt="" width="40" height="40">
+      </div>
+      <div class="buttons" id="myButtons">
+        <a class="seeing" id="marketer" href="https://gftm.io/boBU7x" title="products">Marketing</a>
+        <a class="seeing" id="about" href="about.html" title="vamezeal">About</a>
+        <b class="seeing" id="show" title="homepage">Show</b>
+      </div><br>
+      <input type="text" id="myInput" placeholder="Find something.." title="finder" size="25">
+      <a id="review-marketer-top-menu" title="review"
+        href="https://www.google.com/maps/place/SniffTegist,+NO+9+Duba+Road,+Malali+800283,+Kaduna/@10.5549676,7.4721882,16z/data=!4m6!3m5!1s0x11b2b543f8aa8df3:0xb4592fbd8c410820!8m2!3d10.5560381!4d7.4719829!16s%2Fg%2F11mr2cj43_">
+        <Img id="rate-us-top-menu" title="rate" src="images/stars.png" alt="" width="initial" height="initial"></a>
+    </div>
+  </header>
+
+  <!-- Control buttons -->
+  <div id="myBtnmiddle">
+    <h2 id="koi" title="site affiliate name">Vamezeal</h2>
+    <button class="btn active" type="button" title="show all">Show all</button>
+    <button class="btn" type="button" title="clothes">Clothes</button>
+    <button class="btn" type="button" title="bodycare">Bodycare</button>
+    <button class="btn" type="button" title="building, land and properties">B &
+      Properties</button>
+  </div>
+  
+
+  <div class="middle">
+    <div class="atton">
+      <h1 class="attonce" title="Fashion, Beauty And Eco-friendly lifestyle.">The Professional Materials that Explained
+        Fashion,
+        Beauty And Eco-Friendly Lifestyle are Professionally placed On our Independent
+        Affiliated Marketing Site "VAMEZeal". Just Turn ON The "Buy Button" To "Have It."</h1>
+    </div>
+    <div class="vamezealIAM clothes">
+      <div class="seven">
+      </div>
+    </div>
+    
+    <div class="insidewes1"><b id="cloth-hov-left">clothes</b><b class="wes" title="classic clothes">Classic
+        Clothes</b><b id="cloth-hov-right">clothes</b></div>
+    <!-- The filterable elements. Note that some have multiple class names (this is because they belong to multiple categories) -->
+    <div class="middle">
+      <div id="global_V">
+        <div class="vamezealIAM clothes"><b class="names" title="VF1 Pant">Pant VM1</b><br>
+          <h1 class="snilog" title="Men Inner Pant1">Men Inner Pant</h1>
+            <img class="imgage-marketing" title="VM1-Male-Pant" src="images/VM1-Male-Pant.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF2 Pant">Pant VM2</b><br>
+          <h1 class="snilog" title="Men Inner Pant2">Men Inner Pant</h1>
+            <img class="imgage-marketing" title="VM2-Male-Pant" src="images/VM2-Male-Pant.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF3 Pant">Pant VM3</b><br>
+          <h1 class="snilog" title="Men Inner Pant3">Men Inner Pant</h1>
+            <img class="imgage-marketing" title="VM3-Male-Pant" src="images/VM3-Male-Pant.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF4 Pant">Pant VM4</b><br>
+          <h1 class="snilog" title="Men Inner Pant4">Men Inner Pant</h1>
+            <img class="imgage-marketing" title="VM4-Male-Pant" src="images/VM4-Male-Pant.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF5 Pant">Pant VM5</b><br>
+          <h1 class="snilog" title="Men Inner Pant5">Men Inner Pant</h1>
+            <img class="imgage-marketing" title="VM5-Male-Pant" src="images/VM5-Male-Pant.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF6 Pant">Pant VM6</b><br>
+          <h1 class="snilog" title="Men Inner Pant6">Men Inner Pant</h1>
+            <img class="imgage-marketing" title="VM6-Male-Pant" src="images/VM6-Male-Pant.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF7 Pant">Pant VM7</b><br>
+          <h1 class="snilog" title="Men Inner Pant7">Men Inner Pant</h1>
+            <img class="imgage-marketing" title="VM7-Male-Pant" src="images/VM7-Male-Pant.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF1 Pant">Pant VF1</b><br>
+          <h1 class="snilog" title="Women Inner Pant1">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF1-high-waist-breathable-cotton-underpants-for-women-lace-pattern-style"
+              src="images/VF1-high-waist-breathable-cotton-underpants-for-women-lace-pattern-style.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ORLei" title="https://ali.ski/ORLei">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF2 Pant">Pant VF2</b><br>
+          <h1 class="snilog" title="Women Inner Pant2">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF2-new-sexy-ice-silk-and-skin-friendly-underwear-breathable-pant-for-women-2XL-YSM810"
+              src="images/VF2-new-sexy-ice-silk-and-skin-friendly-underwear-breathable-pant-for-women-2XL-YSM810.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/FK6cX2" title="https://ali.ski/FK6cX2">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF3 MIIOW Pant">MIIOW Pant VF3</b><br>
+          <h1 class="snilog" title="Women Inner Pant3">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF3-miiow-3PcsSet-breathable-sexy-underwear-ladies-ice-silk-pants-for-women-for-summer-comfort"
+              src="images/VF3-miiow-3PcsSet-breathable-sexy-underwear-ladies-ice-silk-pants-for-women-for-summer-comfort.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/7Fbena" title="https://ali.ski/7Fbena">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF4 Pant">Pant VF4</b><br>
+          <h1 class="snilog" title="Women Inner Pant4">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF4-6pcs-breathable-sexy-soft-ice-silky-pant-and-hip-lift-smooth-style-for-women"
+              src="images/VF4-6pcs-breathable-sexy-soft-ice-silky-pant-and-hip-lift-smooth-style-for-women.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/F-qlR" title="https://ali.ski/F-qlR">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF5 MIIOW Pant">MIIOW Pant VF5</b><br>
+          <h1 class="snilog" title="Women Inner Pant5">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF5-underwear-cat-man-cotton-and-shrinking-hip-lifting-style-with-graphene-antibacteria-pants-for-women"
+              src="images/VF5-underwear-cat-man-cotton-and-shrinking-hip-lifting-style-with-graphene-antibacteria-pants-for-women.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/qcbqng" title="https://ali.ski/qcbqng">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF6 Pant">Pant VF6</b><br>
+          <h1 class="snilog" title="Women Inner Pant6">Women Inner Pant</h1>
+            <img class="imgage-marketing" title="VF6-breathable-sexy-underwear-cotton-pants-for-women"
+              src="images/VF6-breathable-sexy-underwear-cotton-pants-for-women.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/zEsfaI" title="https://ali.ski/zEsfaI">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF7 Pant">Pant VF7</b><br>
+          <h1 class="snilog" title="Women Inner Pant7">Women Inner Pant</h1>
+            <img class="imgage-marketing" title="VF7-cotton-underwear-2022-women-panties"
+              src="images/VF7-cotton-underwear-2022-women-panties.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/qA3yn" title="https://ali.ski/qA3yn">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF8 Pant">Pant VF8</b><br>
+          <h1 class="snilog" title="Women Inner Pant8">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF8-miiow-4pcs-breathable-ice-silk-women-underwear-lightweight-sexy-pants"
+              src="images/VF8-miiow-4pcs-breathable-ice-silk-women-underwear-lightweight-sexy-pants.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/O9xmDW" title="https://ali.ski/O9xmDW">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF9 MIIOW Pant">MIIOW Pant VF9</b><br>
+          <h1 class="snilog" title="Women Inner Pant9">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF9-miiow-5pcs-Ice-silk-seamless-ultra-thin-translucent-sexy-and-Quick-Dry-women-underpants"
+              src="images/VF9-miiow-5pcs-Ice-silk-seamless-ultra-thin-translucent-sexy-and-Quick-Dry-women-underpants.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/daOhkr" title="https://ali.ski/daOhkr">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF10 BZEL Sexy Pant">BZEL Sexy Pant VF10</b><br>
+          <h1 class="snilog" title="Women Inner Pant10">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF10-BZEL-sexy-romantic-french-lace-breathable-silk-satin-skin-friendly-women-underwears-panties"
+              src="images/VF10-BZEL-sexy-romantic-french-lace-breathable-silk-satin-skin-friendly-women-underwears-panties.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/BbLJve" title="https://ali.ski/BbLJve">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF11 Pant">Pant VF11</b><br>
+          <h1 class="snilog" title="Women Inner Pant11">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF11-4PCS-set-breathable-plus-size-pure-thin-strap-string-women-underwear-pants"
+              src="images/VF11-4PCS-set-breathable-plus-size-pure-thin-strap-string-women-underwear-pants.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/KFwAJZ" title="https://ali.ski/KFwAJZ">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF12 V-Cut Pant">V-Cut Pant VF12</b><br>
+          <h1 class="snilog" title="Women Inner Pant12">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF12-warm-steps-underwear-3PCS-set-V-Cut-style-silk-satin-seamless-women's-skin-friendly-sexy-sports-pants"
+              src="images/VF12-warm-steps-underwear-3PCS-set-V-Cut-style-silk-satin-seamless-women's-skin-friendly-sexy-sports-pants.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/OEymU" title="https://ali.ski/OEymU">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF13 MIIOW Pant">MIIOW Pant VF13</b><br>
+          <h1 class="snilog" title="Women Inner Pant13">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF13-miiow-4Pcs-women's-sexy-antibacterial-cotton-skin-riendly-underpants"
+              src="images/VF13-miiow-4Pcs-women's-sexy-antibacterial-cotton-skin-riendly-underpants.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/UEW0e" title="https://ali.ski/UEW0e">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF14 Traceless Pant">Traceless Pant VF14</b><br>
+          <h1 class="snilog" title="Women Inner Pant14">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF14-4Pieces-women-traceless-ice-silky-smooth feeling-underwear-pink-black-red-khaki-panties-L-XL-2XL"
+              src="images/VF14-4Pieces-women-traceless-ice-silky-smooth feeling-underwear-pink-black-red-khaki-panties-L-XL-2XL.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/yd-Xf" title="https://ali.ski/yd-Xf">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF15 Pant">Pant VF15</b><br>
+          <h1 class="snilog" title="Women Inner Pant15">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF15-cotton crotch-waist-pack-hips-student-girls-briefs-pure-fairy-wind-sweet-little-floral-Jacquard-panties-for-women-females-ladies"
+              src="images/VF15-cotton crotch-waist-pack-hips-student-girls-briefs-pure-fairy-wind-sweet-little-floral-Jacquard-panties-for-women-females-ladies.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/33eKC2" title="https://ali.ski/33eKC2">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF16 Transparent Pant">Transparent VFP16</b><br>
+          <h1 class="snilog" title="Women Inner Pant16">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF16-sexy-ladies-transparent-see through-lace-mesh-women's-panties-with-waist-strap-string-V-hulu-girls-underwear"
+              src="images/VF16-sexy-ladies-transparent-see through-lace-mesh-women's-panties-with-waist-strap-string-V-hulu-girls-underwear.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/CSzx_" title="https://ali.ski/CSzx_">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF17 Pant">Pant VF17</b><br>
+          <h1 class="snilog" title="Women Inner Pant17">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF17-S-L-new-10Pieces-sexy-silk-V-waist-briefs-women-underwear-seamless-panties"
+              src="images/VF17-S-L-new-10Pieces-sexy-silk-V-waist-briefs-women-underwear-seamless-panties.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/9fQvM" title="https://ali.ski/9fQvM">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF18 Trowbridge Pant">Trowbridge VFP18</b><br>
+          <h1 class="snilog" title="Women Inner Pant18">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF18-3pieces-trowbridge-women-underpant-lace-sexy-romantic-ladies-pants"
+              src="images/VF18-3pieces-trowbridge-women-underpant-lace-sexy-romantic-ladies-pants.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/aiVsMV" title="https://ali.ski/aiVsMV">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF19 Trowbridge Pant">Trowbridge VFP19</b><br>
+          <h1 class="snilog" title="Women Inner Pant19">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF19-3pieces-set-trowbridge-women's-lace-up-panties-satin-underwear-sexy-and-comfortable-briefs"
+              src="images/VF19-3pieces-set-trowbridge-women's-lace-up-panties-satin-underwear-sexy-and-comfortable-briefs.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/YJb-T" title="https://ali.ski/YJb-T">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF20 Pant">Pant VF20</b><br>
+          <h1 class="snilog" title="Women Inner Pant20">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF20-new-2021-women's-lace-panties-sexy-briefs-hollow-out-women's-underwear-XL"
+              src="images/VF20-new-2021-women's-lace-panties-sexy-briefs-hollow-out-women's-underwear-XL.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/6-IR2A" title="https://ali.ski/6-IR2A">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF21 MIIOW Pant">MIIOW Pant VF21</b><br>
+          <h1 class="snilog" title="Women Inner Pant21">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF21-miiow-ice-silk-traceless-underwear-pants-for-women-antibacterial-lightweight-silk-summer-soft-breathable-shorts"
+              src="images/VF21-miiow-ice-silk-traceless-underwear-pants-for-women-antibacterial-lightweight-silk-summer-soft-breathable-shorts.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/osqUL" title="https://ali.ski/osqUL">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VF22 FINETOO Pant">FINETOO Pant VF22</b><br>
+          <h1 class="snilog" title="Women Inner Pant22">Women Inner Pant</h1>
+            <img class="imgage-marketing"
+              title="VF22-2023-finetoo 3pieces-set-panties-for-women-low-rise-wave-underwear-M-to-XL-female-comfortable-briefs"
+              src="images/VF22-2023-finetoo 3pieces-set-panties-for-women-low-rise-wave-underwear-M-to-XL-female-comfortable-briefs.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/w15Qj" title="https://ali.ski/w15Qj">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+
+        <div class="vamezealIAM clothes"><b class="names" title="Cargo Pant VMT1">Cargo Pant VMT1</b><br>
+          <h1 class="snilog" title="Cargo Pant VMT1">Men Outfit Trauser</h1>
+            <img class="imgage-marketing" title="cargopantV1" src="images/cargopantV1.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://rb.gy/6dp2es" title="https://rb.gy/6dp2es">
+              <b class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Sweatpant Trauser VMT2">Sweatpant VMT2</b><br>
+          <h1 class="snilog" title="Excelent Men outfit2">Men Outfit Trauser</h1>
+            <img class="imgage-marketing" title="sweatpantsV2" src="images/sweatpantsV2.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://rb.gy/fdco7m" title="https://rb.gy/fdco7m"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="HIQOR HipHop Trauser VMT3">HIQOR HipHop</b><br>
+          <h1 class="snilog" title="Excelent Men outfit3">Men Outfit Trauser</h1>
+            <img class="imgage-marketing" title="HIQOR-hiphopV3" src="images/HIQOR-hiphopV3.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/3SFckaN" title="https://bit.ly/3SFckaN"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="VMT4">HipHop joggers</b><br>
+          <h1 class="snilog" title="Excelent Men outfit4">Men Outfit Trauser</h1>
+            <img class="imgage-marketing" title="hiphop-joggersV4" src="images/hiphop-joggersV4.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/47srgNO" title="https://bit.ly/47srgNO"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Harajuku Pant VMT5">Harajuku Pant</b><br>
+          <h1 class="snilog" title="Excelent Men outfit5">Men Outfit Trauser</h1>
+            <img class="imgage-marketing" title="stitching-harajuku-luxuryV5"
+              src="images/stitching-harajuku-luxuryV5.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/3FZ9yWu" title="https://bit.ly/3FZ9yWu"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Corduroy Trauser VMT6">Corduroy Trauser</b><br>
+          <h1 class="snilog" title="Excelent Men outfit6">Men Outfit Trauser</h1>
+            <img class="imgage-marketing" title="corduroy-harajuku-trouserV6"
+              src="images/corduroy-harajuku-trouserV6.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/3FZ9yWu" title="https://bit.ly/3FZ9yWu"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Cozok Sweatshirt VMShirts1">Cozok Sweatshirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit1">Men Outfit Sweatshirt</h1>
+            <img class="imgage-marketing" title="cozok-sweatshirtV1" src="images/cozok-sweatshirtV1.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/3QBqs2q" title="https://bit.ly/3QBqs2q"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Sanwood Sweater VMShirts2">Sanwood Sweater</b><br>
+          <h1 class="snilog" title="Excelent Men outfit2">Men Outfit Sweater</h1>
+            <img class="imgage-marketing" title="sanwood-sweaterV2" src="images/sanwood-sweaterV2.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/46cYlMv" title="https://bit.ly/46cYlMv"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Lance Donovan SS VMShirts3">Lance Donovan SS</b><br>
+          <h1 class="snilog" title="Excelent Men outfit3">Men Outfit Sweatshirt</h1>
+            <img class="imgage-marketing" title="lance-donovan-sweatshirtV3"
+              src="images/lance-donovan-sweatshirtV3.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/468a3Ix" title="https://bit.ly/468a3Ix"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Waffle Shirt VMShirts4">Waffle Shirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit4">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="waffle-round-neck-long-sleeved-T-shirtV4"
+              src="images/waffle-round-neck-long-sleeved-T-shirtV4.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/47bG7wo" title="https://bit.ly/47bG7wo"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Fei-Yi-Li 2023 Shirt VMShirts5">Fei-Yi-Li 2023
+            Shirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit5">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="Fei_Yi_Li-2023-baseball jacketV5"
+              src="images/Fei_Yi_Li-2023-baseball jacketV5.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/47xckhn" title="https://bit.ly/47xckhn"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Matuszak Jacket VMShirts6">Matuszak Jacket</b><br>
+          <h1 class="snilog" title="Excelent Men outfit6">Men Outfit Jacket</h1>
+            <img class="imgage-marketing" title="matuszak-sweater-jacketV6" src="images/matuszak-sweater-jacketV6.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://bit.ly/49wHMOx" title="https://bit.ly/49wHMOx"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="BAMBOOPLE Shirt VMShirts7">BAMBOOPLE Shirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit7">Office Shirt</h1>
+            <img class="imgage-marketing" title="bamboople-new-office-shirtV7"
+              src="images/bamboople-new-office-shirtV7.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/lWt4u" title="https://fas.st/lWt4u"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="PAULFITZGERALD Shirt VMShirts8">PAULFITZGERALD
+            Shirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit8">Office Shirt</h1>
+            <img class="imgage-marketing" title="PAULFITZGERALD-shirtV8" src="images/PAULFITZGERALD-shirtV8.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/dfnssJ" title="https://fas.st/dfnssJ"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Manga T-top Shirt VMShirts9">Manga T-top Shirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit9">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="manga-tee-top-shirtV9" src="images/manga-tee-top-shirtV9.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/dive5Ex" title="https://fas.st/dive5Ex"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Fancy Fashion Shirt VMShirts10">Fancy Fashion
+            Shirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit10">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="fancy-fashionV10" src="images/fancy-fashionV10.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/tIF8B" title="https://fas.st/tIF8B"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Universal The-Earth VMShirts11">Universal
+            The-Earth</b><br>
+          <h1 class="snilog" title="Excelent Men outfit11">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="universal-the-earthV11" src="images/universal-the-earthV11.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/aN6E4I" title="https://fas.st/aN6E4I"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="XMSFTD T-Top Shirt VMShirts12">XMSFTD T-Top Shirt</b><br>
+          <h1 class="snilog" title="Excelent Men outfit12">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="XMSFTD-Tee-shirtV12" src="images/XMSFTD-Tee-shirtV12.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/GvuINm" title="https://fas.st/GvuINm"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Lance-Donovan S VMShirts13">Lance-Donovan S</b><br>
+          <h1 class="snilog" title="Excelent Men outfit13">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="lance-donovan-classicV13" src="images/lance-donovan-classicV13.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/n2CqrD" title="https://fas.st/n2CqrD"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="MOONBIFFY Shirt VMShirts14">MOONBIFFY Shirt</b><br>
+          <h1 class="snilog" title="Men HipHop Outfit14">Men Outfit Shirt</h1>
+            <img class="imgage-marketing" title="MOONBIFFY-tee-shirt-classicV14"
+              src="images/MOONBIFFY-tee-shirt-classicV14.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/0pqam2" title="https://fas.st/0pqam2"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC1">Men VMMC1</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC1">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC1" src="images/men-clothes-VMMC1.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC2">Men VMMC2</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC2">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC2" src="images/men-clothes-VMMC2.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC3">Men VMMC3</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC3">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC3" src="images/men-clothes-VMMC3.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC4">Men VMMC4</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC4">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC4" src="images/men-clothes-VMMC4.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC5">Men VMMC5</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC5">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC5" src="images/men-clothes-VMMC5.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC6">Men VMMC6</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC6">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC6" src="images/men-clothes-VMMC6.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC7">Men VMMC7</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC7">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC7" src="images/men-clothes-VMMC7.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC8">Men VMMC8</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC8">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC8" src="images/men-clothes-VMMC8.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC9">Men VMMC9</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC9">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC9" src="images/men-clothes-VMMC9.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC10">Men VMMC10</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC10">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC10" src="images/men-clothes-VMMC10.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC11">Men VMMC11</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC11">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC11" src="images/men-clothes-VMMC11.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC12">Men VMMC12</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC12">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC12" src="images/men-clothes-VMMC12.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC13">Men VMMC13</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC13">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC13" src="images/men-clothes-VMMC13.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC14">Men VMMC14</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC14">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC14" src="images/men-clothes-VMMC14.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC15">Men VMMC15</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC15">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC15" src="images/men-clothes-VMMC15.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC16">Men VMMC16</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC16">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC16" src="images/men-clothes-VMMC16.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC17">Men VMMC17</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC17">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC17" src="images/men-clothes-VMMC17.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC18">Men VMMC18</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC18">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC18" src="images/men-clothes-VMMC18.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC19">Men VMMC19</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC19">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC19" src="images/men-clothes-VMMC19.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC20">Men VMMC20</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC20">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC20" src="images/men-clothes-VMMC20.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC21">Men VMMC21</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC21">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC21" src="images/men-clothes-VMMC21.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Men Clothe VMMC22">Men VMMC22</b><br>
+          <h1 class="snilog" title="Men Clothe Outfit VMMC22">Men Clothe</h1>
+            <img class="imgage-marketing" title="men-clothes-VMMC22" src="images/men-clothes-VMMC22.webp" alt=""
+              width="170" height="170"><br>
+
+        </div>
+
+
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC1">Female VMFC1</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC1">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC1" src="images/female-clothes-VMFC1.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/0pqam2" title="https://fas.st/0pqam2"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC2">Female VMFC2</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC2">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC2" src="images/female-clothes-VMFC2.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/l5ELeC" title="https://ali.ski/l5ELeC"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC3">Female VMFC3</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC3">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC3" src="images/female-clothes-VMFC3.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/w0vVk" title="https://ali.ski/w0vVk"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC4">Female VMFC4</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC4">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC4" src="images/female-clothes-VMFC4.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/5-p-9" title="https://ali.ski/5-p-9"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC5">Female VMFC5</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC5">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC5" src="images/female-clothes-VMFC5.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/vnmWap" title="https://ali.ski/vnmWap"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC6">Female VMFC6</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC6">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC6" src="images/female-clothes-VMFC6.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/UsxZJt" title="https://ali.ski/UsxZJt"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC7">Female VMFC7</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC7">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC7" src="images/female-clothes-VMFC7.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/3vyXqq" title="https://ali.ski/3vyXqq"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC61">Female VMFC8</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC8">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC8" src="images/female-clothes-VMFC8.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/Hc76ag" title="https://ali.ski/Hc76ag"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC9">Female VMFC9</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC9">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC9" src="images/female-clothes-VMFC9.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/Cn5EF" title="https://ali.ski/Cn5EF"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC10">Female VMFC10</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC10">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC10" src="images/female-clothes-VMFC10.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/K8u8W" title="https://ali.ski/K8u8W"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC11">Female VMFC11</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC11">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC11" src="images/female-clothes-VMFC11.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/uO9V5" title="https://ali.ski/uO9V5"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC12">Female VMFC12</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC12">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC12" src="images/female-clothes-VMFC12.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/kD4je" title="https://ali.ski/kD4je"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC13">Female VMFC13</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC13">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC13" src="images/female-clothes-VMFC13.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/bJlCs" title="https://ali.ski/bJlCs"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC14">Female VMFC14</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC14">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC14" src="images/female-clothes-VMFC14.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/gtKpPF" title="https://ali.ski/gtKpPF"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC15">Female VMFC15</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC15">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC15" src="images/female-clothes-VMFC15.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/L7tXl" title="https://ali.ski/L7tXl"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC16">Female VMFC16</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC16">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC16" src="images/female-clothes-VMFC16.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/XtmrTN" title="https://ali.ski/XtmrTN"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC17">Female VMFC17</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC17">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC17" src="images/female-clothes-VMFC17.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/K6u1GF" title="https://ali.ski/K6u1GF"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC18">Female VMFC18</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC18">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC18" src="images/female-clothes-VMFC18.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/afOAUx" title="https://ali.ski/afOAUx"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC19">Female VMFC19</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC19">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC19" src="images/female-clothes-VMFC19.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/U1xgmD" title="https://ali.ski/U1xgmD"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC20">Female VMFC20</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC20">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC20" src="images/female-clothes-VMFC20.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/qV7j__" title="https://ali.ski/qV7j__"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC21">Female VMFC21</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC21">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC21" src="images/female-clothes-VMFC21.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/e-sW_v" title="https://ali.ski/e-sW_v"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC22">Female VMFC22</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC22">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC22" src="images/female-clothes-VMFC22.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ighaK" title="https://ali.ski/ighaK"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC23">Female VMFC23</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC23">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC23" src="images/female-clothes-VMFC23.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/iw1Lk9" title="https://ali.ski/iw1Lk9"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC24">Female VMFC24</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC24">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC24" src="images/female-clothes-VMFC24.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/aXYx8K" title="https://ali.ski/aXYx8K"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC25">Female VMFC25</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC25">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC25" src="images/female-clothes-VMFC25.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ZUho3" title="https://ali.ski/ZUho3"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC26">Female VMFC26</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC26">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC26" src="images/female-clothes-VMFC26.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/CVk0t" title="https://ali.ski/CVk0t"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC27">Female VMFC27</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC27">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC27" src="images/female-clothes-VMFC27.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/9LFpZi" title="https://ali.ski/9LFpZi"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC28">Female VMFC28</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC28">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC28" src="images/female-clothes-VMFC28.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/k4WKh" title="https://ali.ski/k4WKh"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC29">Female VMFC29</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC29">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC29" src="images/female-clothes-VMFC29.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/PTgCUA" title="https://ali.ski/PTgCUA"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC30">Female VMFC30</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC30">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC30" src="images/female-clothes-VMFC30.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/-BLy2" title="https://ali.ski/-BLy2"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC31">Female VMFC31</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC31">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC31" src="images/female-clothes-VMFC31.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/yKlH0N" title="https://ali.ski/yKlH0N"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC32">Female VMFC32</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC32">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC32" src="images/female-clothes-VMFC32.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/9gMX1" title="https://ali.ski/9gMX1"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC33">Female VMFC33</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC33">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC33" src="images/female-clothes-VMFC33.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/q0Xz4" title="https://ali.ski/q0Xz4"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC34">Female VMFC34</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC34">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC34" src="images/female-clothes-VMFC34.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/e3xhU" title="https://ali.ski/e3xhU"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC35">Female VMFC35</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC35">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC35" src="images/female-clothes-VMFC35.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/sSnom_" title="https://ali.ski/sSnom_"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC36">Female VMFC36</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC36">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC36" src="images/female-clothes-VMFC36.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/xh6RO" title="https://ali.ski/xh6RO"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC37">Female VMFC37</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC37">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC37" src="images/female-clothes-VMFC37.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/af5j1" title="https://ali.ski/af5j1"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC38">Female VMFC38</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC38">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC38" src="images/female-clothes-VMFC38.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/8si5Q" title="https://ali.ski/8si5Q"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC39">Female VMFC39</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC39">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC39" src="images/female-clothes-VMFC39.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/Q6z3I" title="https://ali.ski/Q6z3I"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC40">Female VMFC40</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC40">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC40" src="images/female-clothes-VMFC40.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/h4EGq" title="https://ali.ski/h4EGq"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC41">Female VMFC41</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC41">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC41" src="images/female-clothes-VMFC41.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/HEgGCR" title="https://ali.ski/HEgGCR"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC42">Female VMFC42</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC42">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC42" src="images/female-clothes-VMFC42.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/qojAdx" title="https://ali.ski/qojAdx"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC43">Female VMFC43</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC43">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC43" src="images/female-clothes-VMFC43.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/Q-8_8t" title="https://ali.ski/Q-8_8t"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC44">Female VMFC44</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC44">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC44" src="images/female-clothes-VMFC44.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/JCqwWK" title="https://ali.ski/JCqwWK"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC45">Female VMFC45</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC45">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC45" src="images/female-clothes-VMFC45.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/Kl1yv" title="https://ali.ski/Kl1yv"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC46">Female VMFC46</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC46">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC46" src="images/female-clothes-VMFC46.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/Ih0DzG" title="https://ali.ski/Ih0DzG"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC47">Female VMFC47</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC47">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC47" src="images/female-clothes-VMFC47.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/bdq9Jf" title="https://ali.ski/bdq9Jf"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC48">Female VMFC48</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC48">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC48" src="images/female-clothes-VMFC48.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/_rutb" title="https://ali.ski/_rutb"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC49">Female VMFC49</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC49">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC49" src="images/female-clothes-VMFC49.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/wtF7c" title="https://ali.ski/wtF7c"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC50">Female VMFC50</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC50">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC50" src="images/female-clothes-VMFC50.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/BltXg" title="https://ali.ski/BltXg"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC51">Female VMFC51</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC51">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC51" src="images/female-clothes-VMFC51.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/L_hQWP" title="https://ali.ski/L_hQWP"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC52">Female VMFC52</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC52">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC52" src="images/female-clothes-VMFC52.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/Pz7ci" title="https://ali.ski/Pz7ci"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC53">Female VMFC53</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC53">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC53" src="images/female-clothes-VMFC53.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/38eWN7" title="https://ali.ski/38eWN7"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC54">Female VMFC54</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC54">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC54" src="images/female-clothes-VMFC54.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/xUcT9" title="https://ali.ski/xUcT9"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC55">Female VMFC55</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC55">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC55" src="images/female-clothes-VMFC55.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/M7mQKo" title="https://ali.ski/M7mQKo"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC56">Female VMFC56</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC56">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC56" src="images/female-clothes-VMFC56.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/erw3m" title="https://ali.ski/erw3m"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC57">Female VMFC57</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC57">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC57" src="images/female-clothes-VMFC57.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/dfUUb0" title="https://ali.ski/dfUUb0"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC58">Female VMFC58</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC58">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC58" src="images/female-clothes-VMFC58.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/bCRQ9" title="https://ali.ski/bCRQ9"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC59">Female VMFC59</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC59">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC59" src="images/female-clothes-VMFC59.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/ha3gwl" title="https://ali.ski/ha3gwl"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC60">Female VMFC60</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC60">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC60" src="images/female-clothes-VMFC60.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/AzRtD" title="https://ali.ski/AzRtD"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC61">Female VMFC61</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC61">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC61" src="images/female-clothes-VMFC61.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/d3IibY" title="https://ali.ski/d3IibY"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Female Clothe VMFC62">Female VMFC62</b><br>
+          <h1 class="snilog" title="Women Clothe Outfit VMFC62">Women Clothe</h1>
+            <img class="imgage-marketing" title="female-clothes-VMFC62" src="images/female-clothes-VMFC62.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://ali.ski/RCbAx" title="https://ali.ski/RCbAx"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+
+
+        <div class="vamezealIAM clothes"><b class="names" title="Fancy Sneakers VMShoe1">Sneakers VMShoe1</b><br>
+          <h1 class="snilog" title="Stress Free Shoe1">Men Stress Free Shoe</h1>
+            <img class="imgage-marketing" title="fancy-sneakersV1" src="images/fancy-sneakersV1.webp" alt="" width="170"
+              height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/DcHJyt" title="https://fas.st/DcHJyt"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+
+        <div class="vamezealIAM clothes"><b class="names" title="Leather Suit Boots VMShoe2">Boots VMShoe</b><br>
+          <h1 class="snilog" title="Office And Occasion Shoe2">Office And Occasion Shoe</h1>
+            <img class="imgage-marketing"
+              title="Luxury-Design-Men's-Retro-Patent-Leather Boots_handmade-business-shoes-with-crocodile-pattern-and-genuine-leatherV2"
+              src="images/Luxury-Design-Men's-Retro-Patent-Leather Boots_handmade-business-shoes-with-crocodile-pattern-and-genuine-leatherV2.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/bNknTx" title="https://fas.st/bNknTx"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Geunine Sneakers VMShoe3">Sneakers VMShoe3</b><br>
+          <h1 class="snilog" title="Men Fancy Shoe3">Men Stress Free Shoe</h1>
+            <img class="imgage-marketing" title="high-quality-geunine-leather-flat-shoes-for-menV3"
+              src="images/high-quality-geunine-leather-flat-shoes-for-menV3.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/Yx2V8" title="https://fas.st/Yx2V8"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM clothes"><b class="names" title="Geunine Sneakers VMShoe4">Sneakers VMShoe4</b><br>
+          <h1 class="snilog" title="Men Fancy Shoe4">Men Fancy Shoe</h1>
+            <img class="imgage-marketing"
+              title="High-Quality-Men's-Luxury-Genuine-leather-sports-shoe-lace-up-running-sneakersV4"
+              src="images/High-Quality-Men's-Luxury-Genuine-leather-sports-shoe-lace-up-running-sneakersV4.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-clobnowview" href="https://fas.st/94h_y" title="https://fas.st/94h_y"><b
+                class="now-buying-clobnow-ctr">buy</b>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="insidewes1"><b id="bod-hov-left">bodycare</b><b class="wes" title="Classic
+      ">Classic Bodycare</b><b id="bod-hov-right">bodycare</b></div>
+
+    <div class="middle">
+      <div id="shop_M">
+        <div class="vamezealIAM bodycare"><b class="names" title="Safeguard Solid Soap VSoap1">Safeguard VSSoap1</b><br>
+          <h1 class="snilog" title="skin body soap1">skin body soap</h1>
+            <img class="imgage-marketing" title="safeguard-detox_VSSoap1" src="images/safeguard-detox_VSSoap1.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/0pqam2" title="https://fas.st/0pqam2">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Safeguard Bath-GEL VBG2">Safeguard VBG2</b><br>
+          <h1 class="snilog" title="skin body soap2">skin body soap</h1>
+            <img class="imgage-marketing" title="safeguard-foaming-bath-Gel-VBG2"
+              src="images/safeguard-foaming-bath-Gel-VBG2.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/-7uQx" title="https://fas.st/-7uQx">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="EELHOE Solid Skin Soap VSSoap3">EELHOE VSSoap3</b><br>
+          <h1 class="snilog" title="skin body soap3">skin body soap</h1>
+            <img class="imgage-marketing" title="eelhoe-skin-VSSoap3" src="images/eelhoe-skin-VSSoap3.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/MNh4wW" title="https://fas.st/MNh4wW">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Majic-P Bath VBG4">Majic Potion VBG4</b><br>
+          <h1 class="snilog" title="skin body soap4">skin body soap</h1>
+            <img class="imgage-marketing" title="majic-potion-bath-jel-VBG4"
+              src="images/majic-potion-bath-jel-VBG4.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/HJg40" title="https://fas.st/HJg40">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Sauvasine Skin-Soap VSSoap5">Sauvasine VSSoap5</b><br>
+          <h1 class="snilog" title="skin body soap5">skin body soap5</h1>
+            <img class="imgage-marketing" title="sauvasine-black-VSSoap5" src="images/sauvasine-black-VSSoap5.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/cxRFv" title="https://fas.st/cxRFv">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="VSS6">Organic Soap VSS6</b><br>
+          <h1 class="snilog" title="skin black soap6">Skin black soap6</h1>
+            <img class="imgage-marketing" title="organic-african-black-soap-avocado-VSS6"
+              src="images/organic-african-black-soap-avocado-VSS6.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/1WkeHu" title="https://fas.st/1WkeHu">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Lanthome Kojic-A VSS7">Lanthome K-A VSS7</b><br>
+          <h1 class="snilog" title="healthy skin body soap7">healthy skin Soap</h1>
+            <img class="imgage-marketing" title="lanthome-kojic-acid-VSS7" src="images/lanthome-kojic-acid-VSS7.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/eXTuCk" title="https://fas.st/eXTuCk">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="arbutin alpha bath gel VBG8">Arbutin VBG8</b><br>
+          <h1 class="snilog" title="skin body soap8">skin body soap</h1>
+            <img class="imgage-marketing" title="arbutin-alpha-bath-VBG8" src="images/arbutin-alpha-bath-VBG8.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/8pZ3mQ" title="https://fas.st/8pZ3mQ">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+
+        <div class="vamezealIAM bodycare"><b class="names" title="Sauvasine Black Skin-Soap VSS9">Sauvasine BS
+            VSS9</b><br>
+          <h1 class="snilog" title="skin body soap9">skin body soap</h1>
+            <img class="imgage-marketing" title="sauvasine-black-skin-soap-shea-butter-VSS9"
+              src="images/sauvasine-black-skin-soap-shea-butter-VSS9.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/rO54c" title="https://fas.st/rO54c">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="YURANM 7Days Once VClotheP1">YURANM 7Days Once</b><br>
+          <h1 class="snilog" title="clothe perfume1">clothe perfume</h1>
+            <img class="imgage-marketing" title="YURANM-7Day-Once-VClotheP1"
+              src="images/YURANM-7Day-Once-VClotheP1.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/vMlZ9" title="https://fas.st/vMlZ9">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Avon Sexy Perfume VCP2">Avon Perfume VCP2</b><br>
+          <h1 class="snilog" title="clothe perfume2">clothe perfume</h1>
+            <img class="imgage-marketing" title="avon-wild-country-luxury-perfume-VCP2"
+              src="images/avon-wild-country-luxury-perfume-VCP2.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/SZ-Htm" title="https://fas.st/SZ-Htm">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="North Moon VCP3">North Moon VCP3</b><br>
+          <h1 class="snilog" title="body perfume3">body perfume</h1>
+            <img class="imgage-marketing" title="north-moon-pheromone-perfume-VCP3"
+              src="images/north-moon-pheromone-perfume-VCP3.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/kQNGl" title="https://fas.st/kQNGl">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Namste Diffuser VMist1">Namste Diffuser VM1</b><br>
+          <h1 class="snilog" title="Home And Office Aroma1">Home And Office Aroma.</h1>
+            <img class="imgage-marketing"
+              title="Namste-WIFI-Control-Aroma-Diffuser-Machine-with-200ml-capacity-electric-air-freshener-VMist1"
+              src="images/Namste-WIFI-Control-Aroma-Diffuser-Machine-with-200ml-capacity-electric-air-freshener-VMist1.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/2kMj7" title="https://fas.st/2kMj7">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="EELHOE Hair Growth VHGro1">EELHOE HG VHGro1</b><br>
+          <h1 class="snilog" title="Male And Female Hair Growth1">Male And Female.</h1>
+            <img class="imgage-marketing" title="eelhoe-hair-growth-VHGro1" src="images/eelhoe-hair-growth-VHGro1.webp"
+              alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/ZN5kR" title="https://fas.st/ZN5kR">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Tongue Scraper VTS1">T Scraper VTS1</b><br>
+          <h1 class="snilog" title="Bad Breath Removing Tool1">Bad Breath Removing</h1>
+            <img class="imgage-marketing" title="tongue-scraper-sweet-tonge-VTS1"
+              src="images/tongue-scraper-sweet-tonge-VTS1.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/iWjq8" title="https://fas.st/iWjq8">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="Inflatable Head Wash Basin VHWB1">Inflatable
+            VHWB1</b><br>
+          <h1 class="snilog" title="Head Washing Basin1">Head Washing Basin</h1>
+            <img class="imgage-marketing" title="inflatable-shampoo-head-washing-basin-VHWB1"
+              src="images/inflatable-shampoo-head-washing-basin-VHWB1.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/tfh6db" title="https://fas.st/tfh6db">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="NAXR Oral Perfume VOP1">NAXR Oral VOP1</b><br>
+          <h1 class="snilog" title="Mouth Perfume1">Mouth Perfume</h1>
+            <img class="imgage-marketing" title="NAXR-oral-fresh-spray-20ml-mouth-freshener-VOP1"
+              src="images/NAXR-oral-fresh-spray-20ml-mouth-freshener-VOP1.webp" alt="" width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/AIkGfZ" title="https://fas.st/AIkGfZ">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+        <div class="vamezealIAM bodycare"><b class="names" title="8 Taste
+          Perfume VCP3">8 Taste VCP3</b><br>
+          <h1 class="snilog" title="clothe perfume3">clothe perfume</h1>
+            <img class="imgage-marketing" title="senoritas-secret-VCP3" src="images/senoritas-secret-VCP3.webp" alt=""
+              width="170" height="170"><br>
+            <a class="now-buying-bodycbnowview" href="https://fas.st/80AHOk" title="https://fas.st/80AHOk">
+              <b class="now-buying-bodycbnow-ctr">buy</b>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="insidewes1"><b id="build-luxury-pro-hov-left">B & P</b><b class="wes" title="Building, Land &
+      Properties">Building &
+        Properties</b><b id="build-luxury-pro-hov-right">B & P</b></div>
+
+    <div class="root_Up">
+      <div id="netizen_G">
+        <div class="vamezealIAM building"><b class="names" title="Ceramic Tile Stickers VSTS1">Ceramic Tile Stickers
+            VSTS1</b>
+          <h5 class="p-descript" title="Wall, Floor And Bathroom1">Wall, Floor And Bathroom.</h5>
+            <img class="products3"
+              title="mainland-china-self-adhesive-foam-ceramic-tile-stickers-bathroom-kitchen-waterproof-wall-decoration-marble-decals-VSTS1"
+              src="images/mainland-china-self-adhesive-foam-ceramic-tile-stickers-bathroom-kitchen-waterproof-wall-decoration-marble-decals-VSTS1.webp"
+              alt="" width="initial" height="90"><br>
+          <a title="https://fas.st/JXXBR" class="now-buying-buprobnowview" href="https://fas.st/JXXBR"><b
+              class="now-buying-buprobnow-ctr">buy</b>
+          </a><br>
+        </div>
+        <div class="vamezealIAM building"><b class="names" title="1KG-Transparent-Waterproof VTW1">1KG Transparent
+            Proof VTW1</b>
+          <h5 class="p-descript" title="For Wall, Floor And Bathroom2">For Wall, Floor And Bathroom.</h5>
+            <img class="products3"
+              title="1KG-Transparent-Waterproof-Adhesive-for-Bathroom-Acrylic-Pure-Propylene-Waterproof-Coating-VTW1"
+              src="images/1KG-Transparent-Waterproof-Adhesive-for-Bathroom-Acrylic-Pure-Propylene-Waterproof-Coating-VTW1.webp"
+              alt="" width="initial" height="90"><br>
+          <a title="https://fas.st/6OE6A7" class="now-buying-buprobnowview" href="https://fas.st/6OE6A7"><b
+              class="now-buying-buprobnow-ctr">buy</b>
+          </a><br>
+        </div>
+        <div class="vamezealIAM building"><b class="names" title="MINGDIBAO Italian Luxury Chair Italian1 VC1">MINGDIBAO
+            Italian Luxury Chair Italian1 VC1</b>
+          <h5 class="p-descript" title="For Room, Parlor And Special Office1">For Room, Parlor And Special Office.</h5>
+            <img class="products3" title="mingdibao-italiaanse-lederen-sectionele-bluetooth-speaker-Italian1-VC1"
+              src="images/mingdibao-italiaanse-lederen-sectionele-bluetooth-speaker-Italian1-VC1.webp" alt=""
+              width="initial" height="90"><br>
+          <a title="https://fas.st/lR1N6I" class="now-buying-buprobnowview" href="https://fas.st/lR1N6I"><b
+              class="now-buying-buprobnow-ctr">buy</b>
+          </a><br>
+        </div>
+        <div class="vamezealIAM building"><b class="names" title="Recliner Nordic Luxury Sofa VSofa1">Recliner Nordic
+            Luxury Sofa VSofa1</b>
+          <h5 class="p-descript" title="For Room, Parlor And Special Office2">Room, Parlor And Special Office.</h5>
+            <img class="products3"
+              title="Recliner-Nordic-Sofa-Living-Room-Luxury-Modern-Handrail-Canape-Gonflabe-Salon-Furniture-MQ50SF-VSofa1"
+              src="images/Recliner-Nordic-Sofa-Living-Room-Luxury-Modern-Handrail-Canape-Gonflabe-Salon-Furniture-MQ50SF-VSofa1.webp"
+              alt="" width="initial" height="90"><br>
+          <a title="https://fas.st/D03uX" class="now-buying-buprobnowview" href="https://fas.st/D03uX"><b
+              class="now-buying-buprobnow-ctr">buy</b>
+          </a><br>
+        </div>
+        <div class="vamezealIAM building"><b class="names" title="Dutrieux Home Bed VBed1">Dutrieux Home Bed VBed1</b>
+          <h5 class="p-descript" title="For Room, Parlor And Special Office3">Room, Parlor And Special Office.</h5>
+            <img class="products3" title="dutrieux-home-bed-VBed1" src="images/dutrieux-home-bed-VBed1.webp" alt=""
+              width="initial" height="90"><br>
+          <a title="https://fas.st/WHFa8" class="now-buying-buprobnowview" href="https://fas.st/WHFa8"><b
+              class="now-buying-buprobnow-ctr">buy</b>
+          </a><br>
+        </div>
+
+        <div class="vamezealIAM building"><b class="names" title="TUFTY BED Luxury VBed1">TUFTY BED Luxury VBed1</b>
+          <h5 class="p-descript" title="For Room, Parlor And Special Office4">Room, Parlor And Special Office.</h5>
+            <img class="products3" title="TUFTY-BED-nordic-double-bed-light-luxury-tatami-VBed1"
+              src="images/TUFTY-BED-nordic-double-bed-light-luxury-tatami-VBed1.webp" alt="" width="initial"
+              height="90"><br>
+          <a title="https://fas.st/WDjnV" class="now-buying-buprobnowview" href="https://fas.st/WDjnV"><b
+              class="now-buying-buprobnow-ctr">buy</b>
+          </a><br>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="review-marketer">
+        <a title="rate" id="review-marketer-bottom-menu" href="https://www.google.com/maps/place/SniffTegist,+NO+9+Duba+Road,+Malali+800283,+Kaduna/@10.5549676,7.4721882,16z/data=!4m6!3m5!1s0x11b2b543f8aa8df3:0xb4592fbd8c410820!8m2!3d10.5560381!4d7.4719829!16s%2Fg%2F11mr2cj43_">
+          <img id="rate-us-bottom-menu" title="rate vamezeal" src="images/stars.png" alt="stars.png" width="initial" height="initial">
+        </a>
+      </picture>
+      <br>...<br>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <amp-consent layout="nodisplay" id="vamezeal-iam">
+      <script type="application/json">
+        {
+          "consentInstanceId": "vamezeal-iam",
+          "consentRequired": "remote",
+          "checkConsentHref": "https://vamezeal.com.ng/privacy-policy-vamezeal-ams",
+          "promptUI": "cookieConsentBanner",
+          "onUpdateHref": "https://vamezeal.com.ng/update-consent"
+        }
+      </script>
+      <div id="cookieConsentBanner">
+        <p id="vc-yes-message">
+          We "VAMEZeal (IAM) Marketing, use cookies to enhance your visitation experience on our site. By continuing to
+          use our
+          site, you agree to
+          our use of
+          cookies, as described in our
+          <a id="vc-yes" href="https://vamezeal.com.ng/privacy-policy-vamezeal-ams" target="_blank"
+            rel="noopener noreferrer">Cookie Policy</a>
+        </p>
+        <img id="cookie-sweet" title="cookie.png" src="images/cookie.png" alt="" width="initial" height="50"><br>
+        <button id="cookieConsentButton" type="button" on="tap:vamezeal-iam.accept">I Agree</button>
+      </div>
+    </amp-consent>
+
+    <amp-script layout="container" src="https://vamezeal.com.ng/filter.js">
+      <!-- Your content here -->
+  </amp-script>
+  
+
+    
+
+    <!-- Ads Native -->
+</body>
+
+<div id="snifftegistl" title="Web Developer"><img id="weblog" title="snifftegist" src="images/snifftegistlogo.png"
+    alt="snifftegistlogo.png" width="20" height="20">Weblog SniffTegist</div><br>
+
+<footer>
+  <nav>
+    <a id="tos" title="terms-and-conditions-ams" href="terms-and-conditions-ams.html">Terms And Conditions</a>
+    <b id="license" title="MIT Certified">(c) 2023 VAMEzeal</b>
+    <a id="tac" title="privacy-policy-vamezeal-ams" href="privacy-policy-vamezeal-ams.html">Privacy Policy</a><br><br>
+    <a class="youtube" href="https://www.youtube.com/channel/UCxozb09Z7aaFjW1o4iOSrLA">
+      <img title="youtube" src="images/youtube.png" alt="youtube.png" width="50" height="initial"></a>
+    <a class="whatsapp" title="whatsapp" href="https://whatsapp.com/channel/0029VaEArYr6mYPLYWDG7p0y">
+      <img title="whatsapp" src="images/whatsapp.png" alt="whatsapp.png" width="50" height="initial"></a>
+    <a class="caller" title="call" href="tel:+2348166049252">
+      <img title="caller" src="images/callsnifftegist.png" alt="callsnifftegist.png" width="50" height="initial"></a>
+    <a class="message" href="mailto:vamezeal@gmail.com"><img title="message" src="images/messagegreen.png"
+        alt="messagegreen.png" width="50" height="initial"></a><br>
+    <b id="registered" title="smedan">SUIN7246385276</b>
+  </nav>
+  <p id="chi">VAMEZeal Marketing</p>
+</footer>
+
+</html>
