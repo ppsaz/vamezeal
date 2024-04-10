@@ -105,7 +105,6 @@
   <!-- Adsense Ad blocking recovery -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="preload" as="style">
-  <meta name="google-adsense-account" content="ca-pub-9324524444765938">
   <!-- cname and ssl -->
   <meta name="cname" content="vamezeal.com.ng">
   <meta name="ssl" content="-----BEGIN CERTIFICATE-----
@@ -4073,6 +4072,27 @@
           <button type="submit" id="cookieConsentButton" on="tap:cookieConsentBanner.dismiss">I Agree</button>
         </amp-user-notification>
         <!-- VAMEZeal Cookie Controller -->
+
+        <!-- amp-analytics -->
+        <amp-analytics type="googleanalytics">
+          <script type="application/json">
+{
+  "vars": {
+    "account": "UA-YYYY-Y"
+  },
+  "triggers": {
+    "default pageview": {
+      "on": "visible",
+      "request": "pageview",
+      "vars": {
+        "title": "Name of the Article"
+      }
+    }
+  }
+}
+          </script>
+        </amp-analytics>
+        <!-- amp-analytics end -->
 
 </body>
 
