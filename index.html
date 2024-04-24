@@ -3,6 +3,40 @@
 
 <head>
   <meta charset="utf-8">
+
+  <script>
+    // Define dataLayer and the gtag function.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    // Set default consent to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5HZSC35R3">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+    gtag('config', 'G-P5HZSC35R3');
+  </script>
+
+  <!-- Create one update function for each consent parameter -->
+  <script>
+    function consentGrantedAdStorage() {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted'
+      });
+    }
+  </script>
   <meta name="google-site-verification" content="XF66T7waaHgSeGnr7ov8qcmusf7VJkUnmDYrX0UwGcY" />
   <meta name="google-site-verification" content="KClO_EbIrFRQE2lBYgfsLeAILIPoaB54KEOKRicyfNM" />
   <link rel="shortcut icon" href="https://vamezeal.com.ng/images/vamezeallogo.png" type="image/x-icon">
@@ -1488,7 +1522,6 @@
     </script>
   </amp-analytics>
   <!-- amp-analytics end -->
-  <!-- Google Tag Manager -->
   <!-- Google Tag Manager -->
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NGP8X29Z&gtm.url=SOURCE_URL"
     data-credentials="include"></amp-analytics>
@@ -4084,6 +4117,11 @@
           </a>
           <br>...<br>
         </section>
+
+
+
+        <button onclick="consentGrantedAdStorage">Yes</button>
+
 
 
         <!-- Cookie Consent Banner -->
