@@ -4119,11 +4119,6 @@
         </section>
 
 
-
-        <button onclick="consentGrantedAdStorage">Yes</button>
-
-
-
         <!-- Cookie Consent Banner -->
         <amp-user-notification layout="nodisplay" id="cookieConsentBanner"
           data-show-if-href="https://foo.com/api/show-api?timestamp=TIMESTAMP"
@@ -4137,7 +4132,7 @@
 
           <img id="cookie-sweet" title="cookie.png" src="https://vamezeal.com.ng/images/cookie.png" alt="" width="50"
             height="50"><br>
-          <button type="submit" id="cookieConsentButton" on="tap:cookieConsentBanner.dismiss">I Agree</button>
+          <button type="submit" id="cookieConsentButton" on="consentGrantedAdStorage">I Agree</button>
         </amp-user-notification>
         <!-- VAMEZeal Cookie Controller -->
 
