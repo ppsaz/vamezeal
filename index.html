@@ -23,6 +23,7 @@
     rel="stylesheet">
   <!-- AMP Analytics -->
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
   <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
   <script async custom-element="amp-user-notification"
     src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
@@ -3966,11 +3967,22 @@
           <br>...<br>
         </section>
 
+        <amp-geo layout="nodisplay">
+          <script type="application/json">
+              {
+                  "ISOCountryGroups": {
+                      "ineu": ["al", "ad", "at", ""]
+                  }
+              }
+          </script>
+      </amp-geo>
+
 
         <!-- Cookie Consent Banner -->
         <amp-user-notification layout="nodisplay" id="cookieConsentBanner"
-          data-show-if-href="https://foo.com/api/show-api?timestamp=TIMESTAMP"
-          data-dismiss-href="https://foo.com/api/dismissed">
+        data-show-if-geo="ineu"
+          data-show-if-href="https://vamezeal.com.ng/50D6yxO9QRaX3lsUk4Wkaw/show-api?timestamp=TIMESTAMP"
+          data-dismiss-href="https://vamezeal.com.ng/50D6yxO9QRaX3lsUk4Wkaw/api/dismissed">
           <p id="vc-yes-message">We "VAMEZeal (iAM) Marketing, use cookies to enhance your visitation experience on our
             site. By continuing
             to use our site, you agree to our use of cookies, as described in our
@@ -3982,24 +3994,7 @@
             height="50"><br>
           <button type="submit" id="cookieConsentButton" on="tap:cookieConsentBanner.dismiss">I Agree</button>
         </amp-user-notification>
-        <!-- VAMEZeal Cookie Controller -->
-
-        <amp-consent layout="nodisplay" id="consent-element">
-          <script type="application/json">
-              {
-                  "consentInstanceId": "my-consent",
-                  "consentRequired": "remote",
-                  "checkConsentHref": "https://vamezeal.com.ng/6H8BIgOOT4KLGm2rXoiJ8g/check-consent",
-                  "promptUI": "consent-ui",
-                  "onUpdateHref": "https://vamezeal.com.ng/update-consent"
-              }
-          </script>
-          <div id="consent-ui">
-              <button on="tap:consent-element.accept">Accept</button>
-              <button on="tap:consent-element.reject">Reject</button>
-              <button on="tap:consent-element.dismiss">Dismiss</button>
-          </div>
-      </amp-consent>      
+        <!-- VAMEZeal Cookie Controller -->      
 
         <script>
           var data = { q: 'images/preview-logo.webp' }
