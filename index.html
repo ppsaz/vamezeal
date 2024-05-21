@@ -4136,6 +4136,11 @@
         <!-- VAMEZeal Cookie Controller -->
 
   <!-- ADCash body extention -->
+  <script type="text/javascript">
+    aclib.runAutoTag({
+        zoneId: 'apqdmnnmec',
+    });
+</script>
 
   <script>
     var data = { q: 'https://vamezeal.com.ng/vamezeal-iam-brand-images/vamezeallogo.png' }
@@ -4151,10 +4156,10 @@
     })
       .then(res => res.json())
       .then(response => {
-        document.getElementById("mytitle").innerHTML = response.title
-        document.getElementById("mydescription").innerHTML = response.description
-        document.getElementById("myimage").src = response.image
-        document.getElementById("myurl").innerHTML = response.url
+        document.getElementById("vamezealiAM").innerHTML = response.title
+        document.getElementById("iAMVcontents").innerHTML = response.description
+        document.getElementById("iAMVlogo").src = response.image
+        document.getElementById("iAMVurl").innerHTML = response.url
       })
   </script>
 
