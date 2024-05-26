@@ -5,22 +5,22 @@
   <meta charset="utf-8">
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KC9G8NB4');</script>
-  <!-- End Google Tag Manager -->
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-K6KNQHKG');</script>
+<!-- End Google Tag Manager -->
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5HZSC35R3"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DE5PW0DDE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-P5HZSC35R3');
+    gtag('config', 'G-3DE5PW0DDE');
   </script>
 
   <!-- Webmanifest -->
@@ -78,12 +78,12 @@
   <meta name="description"
     content="VAMEZeal iAM aliexpress, 99% Affiliation. clothes, bodycare, Building & Properties, shirts, trausers, pants, panties, glasses, beds, sofas, perfumes. Etcetera.">
   <!-- Open Graph Meta Tags -->
-  <meta id="iAMVurl" property="og:url" content="https://vamezeal.com.ng">
+  <meta property="og:url" content="https://vamezeal.com.ng">
   <meta property="og:type" content="website">
-  <meta id="vamezealiAM" property="og:title" content="VAMEZeal">
-  <meta id="iAMVcontents" property="og:description"
+  <meta property="og:title" content="VAMEZeal">
+  <meta property="og:description"
     content="VAMEZeal iAM aliexpress, 99% Affiliation. clothes, bodycare, Building & Properties, shirts, trausers, pants, panties, glasses, beds, sofas, perfumes. Etcetera.">
-  <meta id="iAMVlogo" property="og:image" content="https://vamezeal.com.ng/vamezeal-iam-brand-images/preview-logo.webp">
+  <meta property="og:image" content="https://vamezeal.com.ng/vamezeal-iam-brand-images/preview-logo.png>
   <meta property="og:image:width" content="444">
   <meta property="og:image:height" content="251">
   <!-- Twitter Meta Tags -->
@@ -93,7 +93,7 @@
   <meta name="twitter:title" content="VAMEZeal">
   <meta name="twitter:description"
     content="VAMEZeal iAM aliexpress, 99% Affiliation. clothes, bodycare, Building & Properties, shirts, trausers, pants, panties, glasses, beds, sofas, perfumes. Etcetera.">
-  <meta name="twitter:image" content="https://vamezeal.com.ng/vamezeal-iam-brand-images/preview-logo.webp">
+  <meta name="twitter:image" content="https://vamezeal.com.ng/vamezeal-iam-brand-images/preview-logo.png">
   <!-- Meta Tags Generated via https://opengraph.dev -->
   <!-- Api Linkpreview End -->
 
@@ -1514,9 +1514,9 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC9G8NB4" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6KNQHKG" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <!-- header -->
   <header>
@@ -4294,7 +4294,7 @@
 
         <!-- linkpreview show -->
         <script>
-          var data = { q: 'https://vamezeal.com.ng/vamezeal-iam-brand-images/vamezeallogo.png' }
+          var data = { q: 'vamezeal-iam-brand-images/preview-logo.png' }
           var key = "d84dfe494c6a60d9197b3e4b66dc5a67"
 
           fetch('https://api.linkpreview.net', {
@@ -4305,13 +4305,13 @@
             mode: 'cors',
             body: JSON.stringify(data),
           })
-            .then(res => res.json())
-            .then(response => {
-              document.getElementById("vamezealiAM").innerHTML = response.title
-              document.getElementById("iAMVcontents").innerHTML = response.description
-              document.getElementById("iAMVlogo").src = response.image
-              document.getElementById("iAMVurl").innerHTML = response.url
-            })
+          .then(res => res.json())
+        .then(response => {
+          document.getElementById("mytitle").innerHTML = response.title
+          document.getElementById("mydescription").innerHTML = response.description
+          document.getElementById("myimage").src = response.image
+          document.getElementById("myurl").innerHTML = response.url
+        })
         </script>
 
         <!-- ADCash body extention -->
