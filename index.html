@@ -1528,6 +1528,29 @@
       src="https://www.facebook.com/tr?id=2680959678777994&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
+
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '{your-app-id}',
+        cookie: true,
+        xfbml: true,
+        version: '{api-version}'
+      });
+
+      FB.AppEvents.logPageView();
+
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
 </head>
 
 <body>
@@ -1547,6 +1570,9 @@
         <a class="seeing" id="about" href="about.html" title="vamezeal">About</a>
         <b class="seeing" id="show" title="homepage">Show</b>
       </div><br><br>
+
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
       <div class="menu">
         <a id="review-marketer-top-menu" title="review"
           href="https://www.google.com/maps/place/SniffTegist,+NO+9+Duba+Road,+Malali+800283,+Kaduna/@10.5549676,7.4721882,16z/data=!4m6!3m5!1s0x11b2b543f8aa8df3:0xb4592fbd8c410820!8m2!3d10.5560381!4d7.4719829!16s%2Fg%2F11mr2cj43_">
