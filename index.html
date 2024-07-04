@@ -171,20 +171,19 @@
       height: 100vh;
       text-align: center;
       background-color: rgb(255, 255, 255);
-      background: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/bgpool-red-borderV1.webp");
+      background: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/bgpool-red-borderV1.webp");
       background-repeat: no-repeat;
       background-size: 100dvw;
       padding: 0.1vmin;
       margin: 0.1vmin;
       border-radius: 11px;
+      display: grid;
     }
 
-    #iam-menue {
+    header {
       padding-left: 0.2em;
       padding-right: 0.2em;
       padding-bottom: 0.5em;
-      margin-left: 0.1em;
-      margin-right: 0.1em;
       margin-bottom: 1em;
       width: initial;
       height: initial;
@@ -208,10 +207,9 @@
       float: left;
       margin: 0.5%;
       position: static;
-      display: -ms-grid;
       display: -moz-grid;
-      display: flex;
-      flex-wrap: wrap;
+      display: -ms-grid;
+      display: grid;
     }
 
     #iam-Name {
@@ -301,7 +299,7 @@
     }
 
     #show {
-      background-image: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/show.webp");
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/show.webp");
       background-repeat: no-repeat;
       background-size: contain;
       position: static;
@@ -327,7 +325,7 @@
     }
 
     #about {
-      background-image: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/about.webp");
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/about.webp");
       background-repeat: no-repeat;
       background-size: contain;
       position: static;
@@ -352,7 +350,7 @@
     }
 
     #marketer {
-      background-image: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/marketer.webp");
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/marketer.webp");
       background-repeat: no-repeat;
       background-size: contain;
       position: static;
@@ -432,8 +430,6 @@
       color: whitesmoke;
       background-color: black;
       border-radius: 5px;
-      width: auto;
-      height: fit-content;
     }
 
     /* Style the buttons */
@@ -444,7 +440,7 @@
       margin-left: 3px;
       margin-right: 3px;
       background-color: #0a0a0a;
-      background-image: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/btnV1.webp");
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/btnV1.webp");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -470,7 +466,7 @@
     }
 
     .btn.active {
-      background-image: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/btnV1-act.webp");
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/btnV1-act.webp");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -509,7 +505,10 @@
 
 
     .atton {
-      text-align: center;
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/svamels5.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       background-color: rgb(30, 29, 29);
       padding-top: 0.2px;
       padding-bottom: 0.2px;
@@ -539,7 +538,7 @@
     }
 
     #iAm-brand-banner {
-      background-image: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/websitebgV2.webp");
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/websitebgV2.webp");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -573,7 +572,7 @@
       margin-left: 2px;
       margin-right: 2px;
       border-radius: 5px;
-      background-image: url("https://vamezeal.com.ng/vamezeal-iam-brand-images/svamebs5.webp");
+      background-image: url("https://vamezeal.com.ng/aliexpress-vamezeal-iam-images/svamebs5.webp");
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
@@ -691,28 +690,29 @@
       lighting-color: whitesmoke;
       animation-direction: normal;
       background-color: #030100;
-      background-image: url("vamezeal-iam-brand-images/viewer-friendly-iAM.webp");
+      background-image: url("images/viewer-friendly-iAM.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       /* Responsive font size */
       color: black;
-      width: 100vw;
+      width: auto;
       height: auto;
       text-align: center;
       padding-top: 0.5%;
       padding-bottom: 0.5%;
-      padding-left: 0.2%;
-      padding-right: 0.2%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
       margin-top: 3.2px;
       margin-bottom: 3.2px;
       margin-left: 2px;
       margin-right: 2px;
       border-radius: 5px;
-      display: inline;
+      display: run-in;
       /* Hidden by default */
       -ms-flex: auto;
-      flex: auto;
+      flex-shrink: initial;
+      flex: content;
       align-content: center;
       align-self: center;
       align-items: center;
@@ -722,7 +722,7 @@
     }
 
     .aliexpress-admitad-vamezeal-iAM-clothes {
-      background-image: url("vamezeal-iam-brand-images/viewer-friendly-iAM sections.png");
+      background-image: url("images/viewer-friendly-iAM sections.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -741,7 +741,7 @@
     }
 
     .aliexpress-admitad-vamezeal-iAM-bodycare {
-      background-image: url("vamezeal-iam-brand-images/viewer-friendly-iAM sections.png");
+      background-image: url("images/viewer-friendly-iAM sections.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -760,7 +760,7 @@
     }
 
     .aliexpress-admitad-vamezeal-iAM-properties {
-      background-image: url("vamezeal-iam-brand-images/viewer-friendly-iAM sections.png");
+      background-image: url("images/viewer-friendly-iAM sections.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -803,7 +803,7 @@
       font-weight: 400;
       color: rgba(245, 245, 245, 0.972);
       background-color: #0a0a0a;
-      background-image: url("vamezeal-iam-brand-images/viewer-friendly-iAM.webp");
+      background-image: url("images/viewer-friendly-iAM.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -814,10 +814,13 @@
       width: initial;
       height: initial;
       border-radius: 5px;
-      page-break-inside: auto;
     }
 
     .imgage-marketing {
+      border-radius: 5%;
+    }
+
+    .body-care {
       border-radius: 5%;
     }
 
@@ -825,7 +828,7 @@
       color: rgba(245, 245, 245, 0.972);
       text-align: center;
       align-items: center;
-      background-image: url("vamezeal-iam-brand-images/pcardce5.webp");
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
       width: initial;
@@ -848,7 +851,7 @@
       background-color: #5c5c5ca6;
       text-align: center;
       align-items: center;
-      background-image: url("vamezeal-iam-brand-images/pcardce5.webp");
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
       width: initial;
@@ -870,7 +873,7 @@
       color: rgba(245, 245, 245, 0.972);
       text-align: center;
       align-items: center;
-      background-image: url("vamezeal-iam-brand-images/pcardce5.webp");
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
       width: initial;
@@ -893,7 +896,7 @@
       background-color: #5c5c5ca6;
       text-align: center;
       align-items: center;
-      background-image: url("vamezeal-iam-brand-images/pcardce5.webp");
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
       width: initial;
@@ -915,7 +918,7 @@
       color: rgba(245, 245, 245, 0.972);
       text-align: center;
       align-items: center;
-      background-image: url("vamezeal-iam-brand-images/pcardce5.webp");
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
       width: initial;
@@ -938,7 +941,7 @@
       background-color: #5c5c5ca6;
       text-align: center;
       align-items: center;
-      background-image: url("vamezeal-iam-brand-images/pcardce5.webp");
+      background-image: url("images/pcardce5.webp");
       background-repeat: no-repeat;
       background-size: contain;
       width: initial;
@@ -1005,7 +1008,7 @@
     }
 
     .names {
-      background-image: url("vamezeal-iam-brand-images/website-names-bgV1.webp");
+      background-image: url("images/website-names-bgV1.webp");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -1043,7 +1046,7 @@
     .p-descript {
       color: whitesmoke;
       background-color: #0a0a0a;
-      background-image: url("vamezeal-iam-brand-images/viewer-friendly-iAM.png");
+      background-image: url("images/viewer-friendly-iAM.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -1347,28 +1350,6 @@
 
     #cookieConsentButton {
       background-color: whitesmoke;
-      color: black;
-      border-style: none;
-      border-radius: 5px;
-      text-align: center;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    #cookieConsentButton:hover {
-      background-color: rgb(0, 255, 34);
-      color: black;
-      border-style: none;
-      border-radius: 5px;
-      text-align: center;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    #cookieConsentButton:visited {
-      background-color: rgb(253, 236, 1);
       color: black;
       border-style: none;
       border-radius: 5px;
