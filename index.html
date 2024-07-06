@@ -1045,18 +1045,8 @@
       border-radius: 5%;
     }
 
-    img.products3 {
-      animation: shake 0.5s;
-      animation-iteration-count: initial;
-      text-align: center;
-      align-content: center;
-      align-self: center;
-      align-items: center;
-      border-radius: 5px;
-      width: 350px;
-      height: initial;
-      margin-left: 1px;
-      margin-right: 1px;
+    .products3 {
+      border-radius: 5%;
     }
 
     .p-descript {
@@ -1541,40 +1531,7 @@
 
 
 
-  <script>
-    // Define dataLayer and the gtag function.
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
 
-    // Set default consent to 'denied' as a placeholder
-    // Determine actual values based on your own requirements
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied',
-      'analytics_storage': 'denied'
-    });
-  </script>
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-GTM-TPTSG5VC');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Create one update function for each consent parameter -->
-  <script>
-    function cookieConsentBanner() {
-      gtag('consent', 'update', {
-        'ad_storage': 'granted'
-      });
-    }
-  </script>
 </head>
 
 <body>
