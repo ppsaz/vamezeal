@@ -13,28 +13,36 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-TPTSG5VC');</script>
   <!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFVJ3NZX9P"></script>
   <script>
+    // Define dataLayer and the gtag function.
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-MFVJ3NZX9P');
-
+    // Set default consent to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
       'analytics_storage': 'denied'
     });
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFVJ3NZX9P">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
 
-    function allConsentGranted() {
+    gtag('js', new Date());
+    gtag('config', 'G-MFVJ3NZX9P');
+  </script>
+
+  <!-- Create one update function for each consent parameter -->
+  <script>
+    function consentGrantedAdStorage() {
       gtag('consent', 'update', {
-        'ad_user_data': 'granted',
-        'ad_personalization': 'granted',
-        'ad_storage': 'granted',
-        'analytics_storage': 'granted'
+        'ad_storage': 'granted'
       });
     }
   </script>
@@ -4300,7 +4308,7 @@
 
           <img id="cookie-sweet" title="cookie.png" src="https://vamezeal.com.ng/vamezeal-iam-brand-images/cookie.png"
             alt="" width="50" height="50"><br>
-          <button type="submit" id="cookieConsentButton" onclick="allConsentGranted()"
+          <button type="submit" id="cookieConsentButton" onclick="consentGrantedAdStorage()"
             on="tap:cookieConsentBanner.dismiss">I Agree</button>
         </amp-user-notification>
         <!-- VAMEZeal Cookie Controller -->
